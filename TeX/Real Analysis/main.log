@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.20)  27 JUN 2024 19:44
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.20)  27 JUN 2024 23:13
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"c:/Users/topos/Documents/VSCode/TeX/Real Analysis/main.tex"
@@ -292,46 +292,134 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box54
 \enit@count@id=\count287
 \enitdp@description=\count288
+) (c:/texlive/2023/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchronous mode
+ (c:/texlive/2023/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2023/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
 )
-\c@definition=\count289
-\c@example=\count290
-\c@exercise=\count291
-\c@theorem=\count292
-\c@lemma=\count293
-\c@proposition=\count294
-\c@corollary=\count295
- (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+\XKV@depth=\count289
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/texlive/2023/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count290
+\mult@box=\box55
+\multicol@leftmargin=\dimen164
+\c@unbalance=\count291
+\c@collectmore=\count292
+\doublecol@number=\count293
+\multicoltolerance=\count294
+\multicolpretolerance=\count295
+\full@width=\dimen165
+\page@free=\dimen166
+\premulticols=\dimen167
+\postmulticols=\dimen168
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
+\partial@page=\box56
+\last@line=\box57
+\mc@boxedresult=\box58
+\maxbalancingoverflow=\dimen169
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@firstbox=\box61
+\mult@gfirstbox=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\c@minrows=\count296
+\c@columnbadness=\count297
+\c@finalcolumnbadness=\count298
+\last@try=\dimen170
+\multicolovershoot=\dimen171
+\multicolundershoot=\dimen172
+\mult@nat@firstbox=\box99
+\colbreak@box=\box100
+\mc@col@check@num=\count299
+))
+\main@idxfile=\write3
+
+\openout3 = main.idx
+
+Writing index file main.idx
+\c@definition=\count300
+\c@example=\count301
+\c@exercise=\count302
+\c@theorem=\count303
+\c@lemma=\count304
+\c@proposition=\count305
+\c@corollary=\count306
+(c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
 File: l3backend-luatex.def 2023-04-19 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count296
+\l__color_backend_stack_int=\count307
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box55
+\l__pdf_internal_box=\box101
 ) (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 34.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
  (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
@@ -346,25 +434,25 @@ Package graphics Info: Driver file: luatex.def on input line 107.
 File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen164
-\scratchbox=\box56
-\nofMPsegments=\count298
-\nofMParguments=\count299
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen165
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count308
+\scratchdimen=\dimen173
+\scratchbox=\box102
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen174
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks35
 ))) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (c:/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\Gin@req@height=\dimen166
-\Gin@req@width=\dimen167
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
 ) (c:/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -372,12 +460,12 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: luatex.def on input line 149.
  (c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 32.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+Package hyperref Info: Link coloring ON on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -387,9 +475,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ] (./main.toc)
-\tf@toc=\write3
+\tf@toc=\write4
 
-\openout3 = main.toc
+\openout4 = main.toc
  [3] [4
 
 ] (./measure-and-integration.tex [1
@@ -397,6 +485,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [2]
 Chapter 1.
 ) [3
+
+] [4
+
+] (./main.ind) [5
+
 
 ] (./main.aux)
  ***********
@@ -406,19 +499,19 @@ L3 programming layer <2023-08-29>
 )
 
 Here is how much of LuaTeX's memory you used:
- 11473 strings out of 477259
+ 12032 strings out of 477259
  125129,1977958 words of node,token memory allocated
- 520 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 7 attribute, 57 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 2:208,3:114,4:36,5:64,6:16,7:588,8:11,9:123,10:3,11:24
- 32527 multiletter control sequences out of 65536+600000
+ 548 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 8 attribute, 60 glue_spec, 8 attribute_list, 1 write nodes
+   avail lists: 1:1,2:267,3:126,4:36,5:72,6:20,7:882,8:18,9:122,10:4,11:44
+ 33045 multiletter control sequences out of 65536+600000
  70 fonts using 5040599 bytes
- 72i,11n,75p,592b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmromanslant12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (7 pages, 47901 bytes).
+ 72i,11n,77p,592b,367s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmromanslant12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (9 pages, 72383 bytes).
 
-PDF statistics: 125 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 131072)
+PDF statistics: 145 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 131072)
  33 words of extra memory for PDF output out of 10000 (max. 100000000)
 

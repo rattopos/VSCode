@@ -7,10 +7,15 @@
 \subsection{\texorpdfstring{\(\sigma\)}{sigma}-algebras}
 
 \begin{definition}
-    An \emph{algebra} on \( X \) is a collection \( \Sigma \subset \mathcal{P}X \) such that
-    \begin{enumerate}
+    Consider a collection \( \Sigma \subset \mathcal{P}X \) s.t.
+    \begin{itemize}
         \item \( X \in \Sigma \)
-        \item \( A \in \Sigma \Rightarrow X \setminus A \in \Sigma \)
-        \item \( A,B \in \Sigma \Rightarrow A \cup B \in \Sigma \) 
-    \end{enumerate}
+        \item \( E \in \Sigma \Rightarrow X \setminus E \in \Sigma \)
+        \item \( \left( E_\alpha \right)_{\alpha \in A} \in \Sigma \Rightarrow \bigcup_{\alpha \in A} E_{\alpha} \in \Sigma \) 
+    \end{itemize}
+    \(\Sigma\) is called an \emph{algebra}\index{algebra} on \(X\) if \(A\) is finite, and \(\Sigma\) is called \emph{\(\sigma\)-algebra}\index{algebra!\(\sigma\)-algebra} on \(X\) if \(A\) is countably infinite.
+\end{definition}
+
+\begin{definition}
+    A \emph{measure}\index{measure} on 
 \end{definition}
