@@ -1,18 +1,41 @@
-\documentclass[a4paper,12pt]{report}
+\documentclass[a4paper,12pt]{book}
 \usepackage{amssymb,amsthm}
 \usepackage{mathtools}
-\usepackage{kotex}
 
 \usepackage{hyperref}
+\hypersetup{
+    pdfpagemode=FullScreen,
+    colorlinks=true,
+    pdftitle={Summary of Analysis}
+}
 \usepackage{bookmark}
+\usepackage{enumitem}
 
-\title{Real Analysis}
-\author{이창재}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+
+\title{Summary of Analysis}
+\author{Changjae Lee\footnote{email: toposless@gmail.com}}
 
 \begin{document}
+
+\frontmatter
 \maketitle
 \tableofcontents
 
+\mainmatter
 \input{./measure-and-integration.tex}
 
 
