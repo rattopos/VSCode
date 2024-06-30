@@ -1,17 +1,17 @@
 # Fdb version 4
-["lualatex"] 1719497620 "c:/Users/topos/Documents/VSCode/TeX/Real Analysis/main.tex" "main.pdf" "main" 1719497624 0
+["lualatex"] 1719500091 "c:/Users/topos/Documents/VSCode/TeX/Real Analysis/main.tex" "main.pdf" "main" 1719500095 0
+  "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bolditalic.luc" 1719500090 136483 a852161c57a7d38a910a92d78ba5ab85 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1696517031 127319 00171b229bfec983f747e1f65f6deb21 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1696517333 128291 dc4204aacc1581d2b85623cb67457031 ""
-  "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc" 1696517151 135235 369ddfa55bbf73d272039e03dc8b2f19 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1696517031 127662 26369905017e9fc3b1393d5a3682941e ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc" 1696517031 128913 b1e1591c9fba674eab70ddd8a205e6a8 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1696517764 128138 1e6dde7eb77a201a51c19e287169893f ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc" 1719482545 129199 57197c53e57d3b56eeef0a15a93ff9b7 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1696517030 293195 54aa1cbb71d0c69b81612b321fc6d4dc ""
-  "c:/Users/topos/Documents/VSCode/TeX/Real Analysis/main.tex" 1719497614 923 af6fe36f4c1be2080c35d2b6e08c11c4 ""
+  "c:/Users/topos/Documents/VSCode/TeX/Real Analysis/main.tex" 1719500086 968 f5328d33c56a606f8896b364df88a638 ""
+  "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bolditalic.otf" 1693949379 118204 6103d677c469e5d9075031c742fe166e ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1693949379 111536 fc712364c8d0a1b548d46c76f2678030 ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf" 1693949379 110496 3798ed6a50bb549a3371df87f46555f4 ""
-  "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf" 1693949379 117732 7e4856311649a06883bcaa8573ee9fbd ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf" 1693949379 110400 fcd786b88ef2ed507d57d8a4a31065e3 ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf" 1693949379 110248 0524e9fd4e00179f5d95f2bba63c8192 ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf" 1693949379 111948 007834bc78aaaf72e203a5b19ed3b49a ""
@@ -41,8 +41,10 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1693943629 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1693943629 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1693943629 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1693943629 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693943629 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1693943629 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1693943630 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1693950464 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2023/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1693944027 40635 c40361e206be584d448876bba8a64a3b ""
   "c:/texlive/2023/texmf-dist/tex/generic/bitset/bitset.sty" 1693944040 33961 6b5c75130e435b2bfdb9f480a09a39f9 ""
@@ -165,11 +167,11 @@
   "c:/texlive/2023/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1693949731 13565 c514d92e6ff6be7b2f35d8e0eb56185c ""
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693966163 4703454 686ac940143bc757f1f10cefc70f8e79 ""
   "c:/texlive/2023/texmf-var/web2c/luahbtex/lualatex.fmt" 1695196759 12202031 a310c1b76090447272667184acdd5e8d ""
-  "main.aux" 1719497624 2373 e726b10fb5cc651ead5c15fe2b76f903 "lualatex"
-  "main.ind" 1719497623 123 1d2471370c120cbd149946dba83ba5ff "makeindex main.idx"
-  "main.tex" 1719497614 923 af6fe36f4c1be2080c35d2b6e08c11c4 ""
-  "main.toc" 1719497624 303 b91a2f6400de2588cc441aa9fa470d7e "lualatex"
-  "measure-and-integration.tex" 1719497592 818 781222a45f215ed0ba215c7fad15672d ""
+  "main.aux" 1719500094 3242 01e58d6cb05184c18e782a612adafc73 "lualatex"
+  "main.ind" 1719500094 153 955e4136ce1cca341b8c3988c7765daf "makeindex main.idx"
+  "main.tex" 1719500086 968 f5328d33c56a606f8896b364df88a638 ""
+  "main.toc" 1719500094 464 3d988e393ba010a1c75b6f747de7d3af "lualatex"
+  "measure-and-integration.tex" 1719499943 1643 769b098aa2199c86b9e723b2a56f0961 ""
   (generated)
   "main.aux"
   "main.idx"
@@ -177,8 +179,8 @@
   "main.pdf"
   "main.toc"
   (rewritten before read)
-["makeindex main.idx"] 1719497619 "main.idx" "main.ind" "main" 1719497624 0
-  "main.idx" 1719497623 91 d1b22a4b377c1db18b59ad6e94666803 "lualatex"
+["makeindex main.idx"] 1719499516 "main.idx" "main.ind" "main" 1719500095 0
+  "main.idx" 1719500094 129 84acd9be977e57b93c2dc1456a3a4e4e "lualatex"
   (generated)
   "main.ilg"
   "main.ind"

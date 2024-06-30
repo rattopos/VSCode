@@ -7,15 +7,31 @@
 \subsection{\texorpdfstring{\(\sigma\)}{sigma}-algebras}
 
 \begin{definition}
-    Consider a collection \( \Sigma \subset \mathcal{P}X \) s.t.
+    Consider a collection \( \mathcal{M} \subset \mathcal{P}X \) s.t.
     \begin{itemize}
-        \item \( X \in \Sigma \)
-        \item \( E \in \Sigma \Rightarrow X \setminus E \in \Sigma \)
-        \item \( \left( E_\alpha \right)_{\alpha \in A} \in \Sigma \Rightarrow \bigcup_{\alpha \in A} E_{\alpha} \in \Sigma \) 
+        \item \( X \in \mathcal{M} \)
+        \item \( E \in \mathcal{M} \Rightarrow X \setminus E \in \mathcal{M} \)
+        \item \( \left( E_\alpha \right)_{\alpha \in I} \in \mathcal{M} \Rightarrow \bigcup_{\alpha \in I} E_{\alpha} \in \Sigma \) 
     \end{itemize}
-    \(\Sigma\) is called an \emph{algebra}\index{algebra} on \(X\) if \(A\) is finite, and \(\Sigma\) is called \emph{\(\sigma\)-algebra}\index{algebra!\(\sigma\)-algebra} on \(X\) if \(A\) is countably infinite.
+    \(\mathcal{M}\) is called an \emph{algebra}\index{algebra} on \(X\) if \(I\) is finite, and \(\mathcal{M}\) is called \emph{\(\sigma\)-algebra}\index{algebra!\(\sigma\)-algebra} on \(X\) if \(I\) is countably infinite.
 \end{definition}
 
+\subsection{measurable spaces}
 \begin{definition}
-    A \emph{measure}\index{measure} on 
+    A \emph{measure}\index{measure} on \(X\) is a function \(\mu:\mathcal{M} \to [0,\infty]\) s.t.
+    \begin{itemize}
+        \item \(\mu(\varnothing)\) = 0
+        \item \(\left( E_j \right)_{1}^{\infty} \) disjoint sets of  \(\mathcal{M} \Rightarrow \mu(\bigcup_{j=1}^{\infty} E_j) = \sum_{j=1}^{\infty} \mu(E_j) \)
+    \end{itemize}
+\end{definition}
+
+\section{Outer Measures}
+
+\begin{definition}
+    An \emph{outer measure}\index{measure!outer measure} on a nonempty set \(X\) is a function \(\mu^\ast: \mathcal{P}X \to [0,\infty]\) s.t.
+    \begin{itemize}
+        \item \(\mu^\ast(\varnothing)=0\)
+        \item \(A \subset B \Rightarrow \mu^\ast(A) \le \mu^\ast(B)\)
+        \item \(\mu^\ast(\bigcup_{j=1}^{\infty} A_j) \le \sum_{1}^{\infty} \mu^\ast(A_j)\)
+    \end{itemize}
 \end{definition}
