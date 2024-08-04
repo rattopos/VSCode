@@ -17,14 +17,6 @@
 \usepackage{imakeidx}
 \makeindex
 
-\usepackage[symbols,nogroupskip,nonumberlist]{glossaries-extra}
-\makeglossaries
-
-\glsxtrnewsymbol[description={\(\sigma\)-algebra},sort={Sigma-algebra}]{Sigma}{\ensuremath{\Sigma}}
-\glsxtrnewsymbol[description={measurable space},sort={measurable space}]{mblesp}{\ensuremath{(X,\Sigma)}}
-\glsxtrnewsymbol[description={measure space},sort={measure space}]{msp}{\ensuremath{(X,\Sigma,\mu)}}
-
-
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 \newtheorem{example}{Example}[section]
@@ -51,17 +43,14 @@
 \begin{document}
 
 \frontmatter
-\glsaddall
 \maketitle
 \tableofcontents
-\printglossary[type=symbols,style=long,title={List of Symbols and Notations}]
 
 \mainmatter
-\input{./abstract-measure-theory.tex}
+\input{abstract-measure-theory.tex}
+\input{funtional-analysis.tex}
 
 \backmatter
 \printindex
-
-\bibliography{../MyLib/mybib}
 
 \end{document}

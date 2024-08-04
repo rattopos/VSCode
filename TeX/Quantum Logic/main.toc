@@ -1,3 +1,11 @@
-\contentsline {part}{I\hspace {1em}Lattice Theory}{1}{part.1}%
-\contentsline {chapter}{\numberline {1}Lattices}{3}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Posets and Lattices}{3}{section.1.1}%
+\contentsline {part}{I\hspace {1em}Spaces}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Measurable Spaces}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Hilbert Spaces}{5}{chapter.2}%
+\contentsline {part}{II\hspace {1em}Lattices and Algebras}{7}{part.2}%
+\contentsline {chapter}{\numberline {3}Lattice Theory}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lattices}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Distributive Lattices}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Modular Lattices}{10}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Complemented Lattices}{10}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Othomodular Lattices}{10}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Algebras}{11}{chapter.4}%
