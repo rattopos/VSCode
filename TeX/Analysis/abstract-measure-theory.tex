@@ -1,0 +1,146 @@
+\part{Measure and Integration}
+
+\chapter{Foundations}
+
+\section{Sets}
+Let \(A\) be a nonemptyset and \(R\) be a binary relation on \(A\).
+
+\begin{description}
+    \item[Refl] Reflexive: \(\forall a \in A,\, aRa\)
+    \item[AntiRefl] Antireflexive: \(\forall a \in A,\, \neg aRa\)
+    \item[Sym] Symmetric: \(\forall a,b \in A,\, aRb \Rightarrow bRa\)
+    \item[AntiSym] Antisymmetic: \(\forall a,b \in A,\, aRb \mbox{ and } bRa \Rightarrow a=b\)
+    \item[Asym] Asymmetric: \(\forall a,b \in A,\, aRb \Rightarrow \neg bRa\)
+    \item[Trans] Transitive: \(\forall a,b \in A,\, aRb \mbox{ and } bRc \Rightarrow aRc\)
+    \item[Total] Total: \(\forall a,b \in A,\, a \neq b \Rightarrow aRb \mbox{ or } bRa \)
+    \item[Well-founded] \(\exists m \in A, \forall a \in A,\, mRa \)    
+\end{description}
+
+\begin{table}
+\begin{centering}
+    \begin{tabular}{ c l }
+    \hline
+    Name & Definition \\
+    \hline
+    equivalence & {\bf Refl + Sym + Trans} \\
+    preorder & {\bf Refl + Trans} \\
+    partial order & {\bf Refl + AntiSym + Trans} \\
+    total order & {\bf Refl + AntiSym + Trans + Total} \\
+    well-ordering & {\bf Refl + Sym + Trans + Total + Well-founded} \\
+    \hline
+    \end{tabular}
+\end{centering}
+    \caption{List of transitive relations.}
+\end{table}
+
+\begin{description}
+    \item[proset] The pair \((A,\precsim) \) is called \emph{preordered set (proset)}\index{order!proset} if \(\precsim \) is a preorder on \(A\).
+    \item[poset] The pair \((A,\preccurlyeq)\) is called \emph{partially ordered set (poset)}\index{order!poset} if \(\preceq\) is a partial order on \(A\).
+    \item[toset] The pair \((A,\preceq)\) is called \emph{totally ordered set (toset)}\index{order!toset} if \(\preceq\) is a total order on \(A\).
+    \item[woset] The pair \((A,\le)\) is called \emph{well-ordered set (woset)} if \(\le\)\index{order!woset} is a well-ordering on \(A\).
+\end{description}
+
+\section{Systems of Sets}
+
+\cite{MR2977961}
+
+\section{Nets and Filters}
+
+\begin{definition}[directed set] Let \((J, \precsim)\) be a proset.
+    \begin{description}
+        \item[(upward) directed] \(\forall a,b \in J,\exists c \in J,\, a\precsim c \mbox{ and } b \precsim c \).
+        \item[downward directed] \(\forall a,b \in J,\exists c \in J,\, c \precsim a \mbox{ and } c \precsim b\).
+    \end{description}
+\end{definition}
+
+\begin{definition}
+    A \emph{net}\index{net} \(x_\bullet = \Net \) in \(X\) is a function \(x_\bullet: J \to X\) where \(J\) is a directed set. 
+\end{definition}
+
+
+\section{Topological Properties}
+
+\chapter{Measures}
+
+\section{Abstract Measures}
+
+If \(\Sigma\) is a \(\sigma\)-algebra on \(X\), then \((X,\Sigma)\) is called a \emph{measurable space}\index{measurable sapce}.
+
+\begin{definition}
+    A \emph{measure}\index{measure} on \((X,\Sigma)\) is a function \(\mu:\Sigma \to [0,\infty]\) s.t.
+    \begin{enumerate}
+        \item \(\mu(\varnothing)\) = 0
+        \item (countable additivity) If \(\left( E_j \right)_{1}^{\infty} \) disjoint sequence in \(\Sigma\), then \[\mu(\bigcup_{j=1}^{\infty} E_j) = \sum_{j=1}^{\infty} \mu(E_j) \]
+    \end{enumerate}
+If \(\mu \) is a measure on \((X,\Sigma)\), then \((X,\Sigma,\mu)\) is called \emph{measure space}\index{measure space}.
+\end{definition}
+
+\begin{definition}
+Let \((X,\Sigma,\mu)\) is a measuable space. Then \(\mu\) is
+\begin{description}
+    \item[finite] \(\mu(X)<\infty\)
+    \item[\(\sigma\)-finite] \(\exists \Seq[E][j] \in \mathrm{Seq}(\Sigma),\, X = \bigcup_{j=1}^{\infty} E_j \mbox{ and } \mu(E_j)< \infty \)
+    \item[semifinite] \(\forall E \in \Sigma,\exists F \in \Sigma,\, F \subset E \mbox{ and } 0<\mu(F)<\infty\)
+\end{description}
+\end{definition}
+
+\paragraph{Iverson bracket}
+    Let \(P\) be a statement,
+    \[\left \llbracket P \right \rrbracket=\begin{dcases}
+        1, & P \mbox{ is true}\\
+        0, & \mbox{otherwise}
+    \end{dcases}\]
+Then the \emph{indicator function}\index{indicator function} of a subset \(A\) of a set \(X\) is a function \(\mathbb{1}_A : X \to \left\{ 0,1 \right\}\) defined as
+\[\mathbb{1}_A(x) = \left \llbracket x \in A \right \rrbracket = \begin{dcases}
+    1, & x \in A \\
+    0, & \mbox{otherwise}
+\end{dcases}\]
+\begin{example}
+    Let \(X\) be any nonempty set
+    \begin{itemize}
+        \item The \emph{counting measure}\index{measure!counting measure} \(\mu : \mathcal{P}(X) \to [0,\infty]\) is defined by
+        \[\mu(E)=\begin{dcases}
+            \left \lvert E \right \rvert, & E \mbox{ is finite} \\
+            \infty, & \mbox{otherwise}
+        \end{dcases}\]
+        \item \(\forall (X,\Sigma), \forall x \in X\), a \emph{Dirac measure}\index{measure!Dirac measure} \(\delta_x: \Sigma \to [0,\infty]\) defined by \[\delta_x(E)=\mathbb{1}_E(x)=\left \llbracket x \in E \right \rrbracket \]
+    \end{itemize}
+\end{example}
+
+\section{Borel Measures}
+
+\section{Outer Measures}
+
+\begin{definition}
+    An \emph{outer measure}\index{measure!outer measure} on a nonempty set \(X\) is a function \(\mu^\ast: \mathcal{P}X \to [0,\infty]\) s.t.
+    \begin{enumerate}
+        \item \(\mu^\ast(\varnothing)=0\)
+        \item \(A \subset B \Rightarrow \mu^\ast(A) \le \mu^\ast(B)\)
+        \item \(\mu^\ast(\bigcup_{j=1}^{\infty} A_j) \le \sum_{1}^{\infty} \mu^\ast(A_j)\)
+    \end{enumerate}
+\end{definition}
+
+\section{Complete Measures}
+
+
+\chapter{Abstract Integration}
+
+\section{Measurable Functions}
+
+\section{Integration of Nonnegative Functions}
+
+\section{Integration of Complex Functions}
+
+\section{Product Measures}
+
+
+\chapter{Signed Measure and Differentiation}
+
+\section{Signed Measures}
+
+\section{Complex Measures}
+
+\section{Differentiation on Euclidean Space}
+
+\section{Bounded Variations}
+

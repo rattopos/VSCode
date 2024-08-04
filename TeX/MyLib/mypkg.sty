@@ -1,0 +1,28 @@
+\NeedsTeXFormat{LuaLaTeX}
+\ProvidesPackage{mypkg}[2024/07/02 Changjae's own package]
+
+\RequirePackage{amssymb}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{xparse}
+
+% theorem styles 
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+
+% operators
+\NewDocumentCommand{\Seq}{ m O{1} m O{n} }{{#1}_{#2} #3 \cdots #3 {#1}_{#4}}
+\NewDocumentCommand{\SSeq}{ m O{i} O{1} m O{n} }{{#1}_{{#2}_{#3}} #4 \cdots #4 {#1}_{{#2}_{#5}}}
+\NewDocumentCommand{\List}{m O{1} O{n}}{{#1}_{#2},\ldots,{#1}_{#3}}

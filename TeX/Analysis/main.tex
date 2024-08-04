@@ -1,7 +1,10 @@
 \documentclass[a4paper,12pt]{book}
 \usepackage{amssymb,amsthm}
+\usepackage{amsrefs}
 \usepackage{mathtools}
-
+\usepackage[scr=boondox,bb=stix]{mathalpha}
+\usepackage{stmaryrd}
+\usepackage{xparse}
 \usepackage{hyperref}
 \hypersetup{
     pdfpagemode=FullScreen,
@@ -10,13 +13,22 @@
 }
 \usepackage{bookmark}
 \usepackage{enumitem}
+
 \usepackage{imakeidx}
 \makeindex
 
+\usepackage[symbols,nogroupskip,nonumberlist]{glossaries-extra}
+\makeglossaries
+
+\glsxtrnewsymbol[description={\(\sigma\)-algebra},sort={Sigma-algebra}]{Sigma}{\ensuremath{\Sigma}}
+\glsxtrnewsymbol[description={measurable space},sort={measurable space}]{mblesp}{\ensuremath{(X,\Sigma)}}
+\glsxtrnewsymbol[description={measure space},sort={measure space}]{msp}{\ensuremath{(X,\Sigma,\mu)}}
+
+
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}
-\newtheorem{example}{Example}
-\newtheorem{exercise}{Exercise}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{exercise}{Exercise}[section]
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Theorem}
@@ -28,7 +40,10 @@
 \newtheorem*{remark}{Remark}
 \newtheorem*{claim}{Claim}
 
-\DeclareEmphSequence{\bfseries\itshape}
+\DeclareEmphSequence{\bfseries}
+
+\NewDocumentCommand{\Net}{O{x} O{\alpha} O{J}}{\left( #1_#2 \right)_{#2 \in #3}}
+\NewDocumentCommand{\Seq}{O{f} O{n}}{\left( #1_#2 \right)_{#2 = 1}^{\infty}}
 
 \title{Summary of Analysis}
 \author{Changjae Lee}
@@ -36,14 +51,17 @@
 \begin{document}
 
 \frontmatter
+\glsaddall
 \maketitle
 \tableofcontents
+\printglossary[type=symbols,style=long,title={List of Symbols and Notations}]
 
 \mainmatter
-\input{./measure-and-integration.tex}
+\input{./abstract-measure-theory.tex}
 
 \backmatter
 \printindex
 
+\bibliography{../MyLib/mybib}
 
 \end{document}
