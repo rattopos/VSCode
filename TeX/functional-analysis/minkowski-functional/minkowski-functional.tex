@@ -1,0 +1,182 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage[scr=boondox,bb=stix]{mathalpha}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+
+\title{Characterizing Minkowski Functionals}
+\author{Chnagjae Lee}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+In this article, we fix a field \(\mathbb{K}\) by \(\mathbb{R}\) or \(\mathbb{C}\) and \(X\) be a \(\mathbb{K}\)-vector space.
+
+\begin{definition} For \(x,y \in X\), \(A \subseteq \mathbb{K}\), \(\alpha \in \mathbb{K}\), and \(S,T \subseteq X\),
+    \begin{enumerate}
+        \item \([x,y] = \{tx+(1-t)y \mid 0 \le t \le 1 \}\),
+        \item \(AS = \{\alpha s \mid \alpha \in \mathbb{K} \mbox{ and } s \in S\}\),
+        \item \(\alpha S = \{\alpha\}S\),
+        \item \(S + T = \{s+t \mid s \in S \mbox{ and } t \in T\}\)
+    \end{enumerate}
+\end{definition}
+
+\begin{definition} Let \(S\subseteq X \). We say that the set \(S\) is
+    \begin{center}
+        \begin{tabular}{r r l}
+            \emph{star-shaped} & (\(\forall s \in S,\exists s_0 \in S\)) & \([s_0,s] \subseteq S \) \\
+            \emph{convex} & (\(\forall x,y \in S\)) & \( [x,y] \subseteq S\) \\
+            \emph{absorbing} & (\(\forall x \in X,\exists r_x>0\)) & \(\left \lvert c \right \rvert \ge r_x \Rightarrow x \in cS \) \\
+            \emph{balanced} & (\(\forall \alpha \in \mathbb{K} \)) & \(\left \lvert \alpha \right \rvert \le 1 \Rightarrow \alpha S \subseteq S\) \\
+        \end{tabular}
+    \end{center}
+\end{definition}
+
+\begin{proposition}
+    \label{balanced-unit}
+    If \(B\subseteq X\) is balanced, then
+    \[(\forall \alpha \in \mathbb{K})\quad |\alpha|=1 \Rightarrow \alpha B = B\]
+    \begin{proof}
+        \[B=\alpha(\overline{\alpha} B) \subseteq \alpha B \subseteq B \]
+    \end{proof}
+\end{proposition}
+
+\begin{proposition}
+    \label{absorbing}
+    Suppose \(S\subseteq X\) is convex or balanced. If \((0,\infty) S = X\), then \(S\) is absorbing.
+
+    \begin{proof} Suppose \((0,\infty) S = X\) and fix nonezero \(x \in X\). Let
+        \[T_x=\{t>0 \mid x \in tS \}\]
+        Since \((0,\infty)S = X\), \(T_y\) is nonempty for each \(y \in X\). Choose \(r_y \) by
+        \[r_y = \inf T_y \].
+        \[r = \inf \{r_{\alpha x} \mid \alpha \in \mathbb{K} \mbox{ and } |\alpha|=1\} \]. Note that \(r>0\). If not \(\alpha x=0\) for some \(|\alpha|=1\). It contradicts to the fact that \(x\) is nonzero.
+        \begin{enumerate}
+            \item If \(S\) is convex, then \(0 \in S\) since \(0 \in r_0S\) for some \(r_0>0\). If \(|\alpha| \ge r\),
+            \[\frac{|\alpha|}{\alpha} x \in rS \Rightarrow \frac{r}{|\alpha|} \frac{|\alpha|}{\alpha} x + \frac{|\alpha|-r}{|\alpha|} 0= \frac{r}{\alpha} x \in rS \Leftrightarrow x \in \alpha S \]
+            by the convexity of \(S\).
+
+            \item If \(S\) is balanced. If \(|\alpha|\ge r\),
+            \[\frac{|\alpha|}{\alpha} x \in rS \Leftrightarrow x \in \alpha \left(\frac{r}{|\alpha|} S\right) \subseteq \alpha S \]
+            by the balancedness of \(S\).
+        \end{enumerate}
+        
+    \end{proof}
+\end{proposition}
+
+\begin{definition} Let \(S \subseteq X\) and let \(f: X \to [0,+\infty]\). We say that the function \(g\) is
+    \begin{center}
+        \begin{tabular}{r r l}
+            \emph{positively homogeneous} & (\(\forall r>0, \forall x \in X\)) & \(f(rx) = rf(x) \) \\
+            \emph{absolutely homogenous} & (\(\forall \alpha \in \mathbb{K}, \forall x \in X\)) & \(f(\alpha x)= \left \lvert \alpha \right \rvert f(x)\) \\
+            \emph{real-valued} & (\(\forall x \in X\)) & \(f(x) \in \mathbb{R}\) \\
+            \emph{subadditive} & (\(\forall x,y \in X\)) &\(f(x+y) \le f(x)+f(y)\)
+        \end{tabular}
+    \end{center}
+\end{definition}
+
+\begin{definition}
+    Let \(S \subseteq X\). A \emph{Minkowski functional} of \(S\) is a function \[\mu_S: X \to [0,+\infty]\] defined by
+    \[\mu_S(x) = \inf \{t \in (0,\infty) \mid t^{-1}x \in S\}\] 
+    Here we define
+    \[ \inf \varnothing = + \infty \quad \mbox{and} \quad \sup \varnothing = - \infty \]
+\end{definition}
+
+\begin{proposition}
+    \label{min-minkow}
+    Let \(S \subseteq X\).
+    \begin{enumerate}[label=(\alph*)]
+        \item \(\mu_S\) is positively homogeneous.
+        \item \(\mu_S\) is subadditive iff \((0,1)S\) is convex.
+        \item \(\mu_S\) is absolutely homogeneous iff \(S\) is balanced.
+    \end{enumerate}
+
+    \begin{proof}
+        \begin{enumerate}[label=(\alph*)]
+            \item \(\forall r,t \in (0,\infty)\)
+        \[ r^{-1}x \in S \Leftrightarrow (tr)^{-1}(tx) \in S\]
+        So, \(\mu_S(tx) = t\mu_S(x)\).
+
+            \item Suppose that \((0,1)S\) is convex. If one of \(\mu_s(x)\) and \(\mu_S(y)\) is \(+\infty\), then inequalrity holds. Now suppose both of them are finite. If \(s> \mu_S(x)\) and \(t> \mu_S(y)\) for some real numbers \(s\) and \(t\), then
+            
+            \[\frac{x+y}{s+t} = \left(\frac{s}{s+t} \right) \frac{x}{s} + \left( \frac{t}{s+t} \right) \frac{y}{t} \in S\]
+
+            So, \(\mu_S(x+y) \le \mu_S(x) + \mu_S(y)\)
+
+            Conversely, suppose that \(\mu_S(x+y) > \mu_S(x) + \mu_S(y)\) for some \(x,y \in X\). Then, both \(s^{-1}x\) and \(t^{-1}y\) in \(X\) but \((s+t)^{-1}(x+y) \notin X\) for some \(s,t \in (0,\infty)\) So,
+            
+            \[\frac{x+y}{s+t} = \left(\frac{s}{s+t} \right) \frac{x}{s} + \left( \frac{t}{s+t} \right) \frac{y}{t} \notin S\]
+            
+            This shows \((0,1)S\) is not convex.
+
+            \item Suppose that \( S \) is balanced.
+            
+            For any \(\alpha \in \mathbb{K}\), therefore,
+            \[\mu_S(\alpha x) = \mu_S\left(|\alpha| \frac{\alpha}{|\alpha|}x\right)=|\alpha| \mu_S\left(\frac{\alpha}{|\alpha|}x\right) = |\alpha| \mu_S(x)\]
+            the last equality holds by the proposition \ref{balanced-unit}
+
+            Conversely, if \(S\) is not balanced, then \(\alpha S \nsubseteq S\) for some \(0<|\alpha| \le 1\). So, there exists \(x \in S\) and \(r \in (\mu_S(x),\infty)\)
+            \[r^{-1}\alpha x \notin S\]
+            Hence,
+            \[ \mu_S(x) < \mu_S(\alpha x) \]
+        \end{enumerate}
+    \end{proof}
+\end{proposition}
+
+\begin{proposition}
+    Let \(f: X \to [0,+\infty]\) be any function and \(S \subseteq X\) be any subset. The following statements are equivalent:
+    \begin{enumerate}
+        \item \(f\) is positive homogeneous, \(f(0)=0\), and
+        \[A=\{x \in X \mid f(x)< 1\} \subseteq S \subseteq B = \{x \in X \mid f(x) \le 1\}\]
+
+        \item \(f=\mu_S\), \(S\) contains the origin, and \(S\) is star-shpaed at the origin.
+    \end{enumerate}
+\end{proposition}
+
+\begin{theorem}
+    Let \(S \subseteq X\). Then \(\mu_S\) is a seminorm on \(X\) iff all of the following conditions hold.
+
+    \begin{enumerate}
+        \item \( (0,\infty)S = X \) (or equivalently, \(\mu_S\) is real-valued).
+        \item \((0,1)S \) is convex (or euivalently, \(\mu_S\) is subadditive).
+        \item \((0,1)\alpha S \subseteq (0,1)S\) for all \(\alpha \in \mathbb{K}\) s.t. \(|\alpha|=1\).
+    \end{enumerate}
+
+    Conversley, if \(p\) is a seminorm on \(X\) then the set
+    \[V=\{x\in X: f(x)<1\}\]
+    satisfies all three of the above conditions and also, \(p=\mu_V\); moreover, \(V\) is necessarily convex, balanced, absorbing and satisfies
+    \[(0,1)V = V = [0,1]V\]
+\end{theorem}
+
+\begin{corollary}
+    If \(A \subseteq X\) is convex, balanced, and absorbing, then \(\mu_A\) is a seminorm on \(X\).
+\end{corollary}
+
+\begin{definition}
+    A positive \emph{sublinear function} is a positive homogeneous subadditive function \(f:X \to [0,\infty)\).
+\end{definition}
+
+\begin{theorem}
+    Suppose \(X\) is a topological vector space. Then the nonempty open convex subsets of \(X\) are exactly those sets that are of the form
+    \[z + \{x \in X \mid p(x)<1\}=\{x\in X \mid p(x-z)<1\}\] for some \(z \in X\) and some positive continuous sublinear function \(p\) on \(X\).
+\end{theorem}
+
+\end{document}
