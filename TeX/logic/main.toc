@@ -1,2 +1,0 @@
-\contentsline {chapter}{\numberline {1}Formal Languages}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}What is a formal language?}{1}{section.1.1}%

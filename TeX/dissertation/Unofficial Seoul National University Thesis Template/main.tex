@@ -26,6 +26,23 @@
 
 \usepackage{mathtools}
 \usepackage{amssymb}
+\usepackage{amsthm}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{claim}{Claim}
+
 
 \usepackage{afterpage}
 \usepackage[breaklinks=true]{hyperref}
@@ -38,7 +55,7 @@
   urlcolor=cobalt,
 }
 
-\title{Kochen-Spaceker Theorem and Quantum Contextuality}
+\title{Gleason's Theorem and Quantum Logic}
 \author{이 창 재}
 \date{2025년 2월}
 
@@ -52,15 +69,13 @@
 
 \tableofcontents
 
-\chapter{Introduction}\label{chapter:Introduction}
+\chapter{Preliniminaries}\label{chapter:Preliminaries}
 \pagenumbering{arabic}
-\input{chapters/introduction}
+\input{chapters/preliminaries.tex}
 
-\input{chapters/chapter_01}
+\chapter{Gleason's Theorem}\label{chapter:Gleason's Theorem}
+\input{chapters/gleason.tex}
 
-
-\chapter{Conclusion}
-\input{chapters/conclusion}
 
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{ieeetr}
