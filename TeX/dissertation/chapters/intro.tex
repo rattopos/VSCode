@@ -1,0 +1,45 @@
+
+\section*{Introduction}
+blah blah
+
+\chapter{Preliminaries}
+
+\section{von Neumann Algebras}
+\begin{definition}
+    Let \(H\) be a Hilbert space. For any subset \(\mathcal{M}\) of \(\mathcal{B}(H)\),
+    \begin{enumerate}
+        \item \(\mathcal{M}'\) denotes the set of all bounded operators on \(H\) commutes with any element of \(\mathcal{M}\).
+        \item The set \(Z(M)=M \cap \mathcal{M}'\) is called the \emph{center} of \(\mathcal{M}\)
+    \end{enumerate}
+\end{definition}
+    
+\begin{definition}
+    A \emph{von Neumann algebra} on a Hilbert space \(H\) is a subset \(\mathcal{A}\) of \(\mathcal{B}(H)\) such that
+        \begin{enumerate}
+            \item \(I \in \mathcal{A}\),
+            \item \(\alpha A + \beta B \in \mathcal{A}\) whenever \(A,B \in \mathcal{A}\), \(\alpha,\beta \in \mathbb{D}\),
+            \item if \(A \in \mathcal{A}\), then \(A^\ast \in \mathcal{A}\),
+        \item \(\mathcal{A}\) is closed in the weak operator topology.
+    \end{enumerate}
+\end{definition}
+
+\section{Elements of Quantum Logic}
+Let \(L\) be a poset. For \(a,b \in L\), the operations \( a\wedge b = \inf \{a,b\}\) and \(a\vee b = \sup \{a,b\}\) are called \emph{meet} and \emph{join} respectively. In general, \[\bigwedge_{i\in I}a_i = \inf \{a_i : i \in I\}\] and \[\bigvee_{i \in I} a_i = \sup \{a_i : i \in I\}\] for any family \( \{a\}_{i \in I}\) of elements of a poset \(L\).
+
+\begin{definition}[Lattice]
+    Let \(L\) be a poset. \(\mathcal{L} = (L,\wedge,\vee) \) is sad to be a \emph{lattice} if both \(a\wedge b\) and \(a \vee b\) exist in \(L\) for any \(a,b \in L\). \(\mathcal{L}\) is said to be a \emph{\(\sigma\)-lattice} or a \emph{complete lattice} if both \(\bigwedge_{i \in I} a_i\) and \(\bigvee_{i \in I} a_i\) exist in \(L\) for any family \(\{a_i\}_{i\in I}\) of elements of \(L\) with a countable or abitrary index set \(I\).
+\end{definition}
+
+\begin{definition}
+    We say that a mapping \(\perp: L \to L\) is said to be an \emph{orthocomplementation} on a poset \(L\) with 0 and 1 if
+\begin{enumerate}
+    \item \((a^\perp)^\perp = a\) for any \(a \in L\),
+    \item if \(a \le b\), then \(b^\perp \le a^\perp \),
+    \item \(a \vee a^\perp=1\) for any \(a \in L\).
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Orthomodular poset; OMP]
+    An \emph{orthomodular poset} is the lattice \(\mathcal{L}=(L,\wedge,\vee)\) satisfying the othormodular condition,
+    \[b=a \vee (b \wedge a^{\perp})\]
+\end{definition}
