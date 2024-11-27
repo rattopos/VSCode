@@ -1,0 +1,205 @@
+\documentclass{beamer}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\title{Gleason's Theorem and Quantum Logic}
+\author{Changjae Lee\inst{1}}
+\institute[SNU]{
+    \inst{1}
+    Department of Mathematical Science\\
+    Seoul National University
+}
+\date{November 29, 2024}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\AtBeginSection[]{
+    \begin{frame}
+        \frametitle{Table of Contents}
+        \tableofcontents[currentsection]
+    \end{frame}
+}
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}
+    \frametitle{Introduction}
+Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described the quantum propositions, through a lattice of projection operators in Hilbert space. This was a new logic that, unlike the Boolean logic, did not satisfy the distribution law.
+
+\begin{examples}
+    Choose a metric system \(\hbar=1\), and let \\
+    P=``the particle has momentum in the interval \([0,\frac{1}{6}]\)",\\
+    Q=``the particle is in the interval \([-1,1]\)",\\
+    R=``the particle is in the interval \([1,3]\)", then
+    \begin{gather*}
+        P \wedge (Q\vee R) = 1,\\
+    (P \wedge Q) \vee (P \wedge R) = 0.
+    \end{gather*}
+    by the uncertainty principle
+    \(\sigma_{x} \sigma_{p} \ge \hbar/2\).
+\end{examples}
+
+\end{frame}
+
+\section{Dirac-von Neumann Axioms}
+\begin{frame}
+    \frametitle{Dirac-Von Neumann Axioms}
+
+The Dirac-von Neumann axioms give a mathematical formulation of quantum mechanics in terms of operators on a Hilbert space. They were introduced by Paul Dirac in 1930 and John von Neumann in 1932.
+
+\begin{block}{Hilbert Space Formulation}
+    Let \(\mathcal{H}\) be a fixed complex Hilbert space of countably infinite dimension.
+    \begin{itemize}
+        \item The observables of a qunatum system are defined to be the self-adjoint operators \(A\) on \(\mathcal{H}\).
+        \item A state \(\psi\) of the quantum system is a unit vector of \(\mathcal{H}\), up to scalar multiples.
+        \item The expectation value of an observable \(A\) for a system in a state \(\psi\) is given by the inner product \(\left \langle \psi,A\psi \right \rangle\).
+    \end{itemize}
+\end{block}
+\end{frame}
+
+\section{Operator Algebras}
+
+\begin{frame}
+    \frametitle{Operator Algebras}
+    \(C^\ast\)-algebras were first considered primarily for their use in quantum mechanics to model algebras of physical observables. John von Neumann attepted to establish a general framework for these algebras, which culminated in a series of papers on rings of operators. These papers considered a special class of \(C^\ast\)-algebras that are now known as von Neumann algebras.
+        \begin{block}{Definition}
+            \(C^\ast\)-Algebra is a complex Banach algebra \(A\) together with an involution \(\ast:A \to A, x \mapsto x^\ast\) which satisfies
+            \begin{enumerate}
+                \item \(x^{\ast\ast}=x\),
+                \item \((x+y)^\ast=x^\ast+y^\ast\)
+                \item \((xy)^\ast = y^\ast x^\ast\),
+                \item \((\lambda x)^\ast=\bar{\lambda}x^\ast\) for all \(\lambda \in \mathbb{C}\),
+                \item \(\left \lVert xx^\ast \right \rVert = \left \lVert x \right \rVert \left \lVert x^\ast \right \rVert \)
+            \end{enumerate}
+        \end{block}\end{frame}
+
+    \begin{frame}
+        \frametitle{Operator Algebras}
+        \begin{block}{Operator Algebra Formalism}
+            The Dirac-von Neumann axioms can be formulated in terms of a \(C^\ast\)-algebra as follows.
+            \begin{itemize}
+                \item The bounded observables of the quantum mechanical system are defined to be the self-adjoint elements of the \(C^\ast\)-algebra.
+                \item The states of the quantum mechanical system are defined to be positive functional \(\rho\) such that \(\left \lVert \rho \right \rVert=1\).
+                \item The value \(\rho(x)\) of a state \(\rho\) on an element \(x\) is the expectation value of the observable \(x\) if the quantum system is in the state \(\rho\).
+            \end{itemize}
+        \end{block}        
+    \end{frame}
+
+
+\section{Quantum Logic}
+
+\begin{frame}
+    \frametitle{Quantum Logic}
+    A \textbf{lattice} \(\mathcal{L}=(L,\vee,\wedge)\) is a structure over a poset \((L,\le)\) such that
+    \begin{gather*}
+        x\wedge y = \inf \{x,y\}, \\
+        x \vee y = \sup \{x,y\}.
+    \end{gather*}
+    exist in \(L\) for all \(x,y \in L\). More generally, \emph{\(\sigma\)-lattice} or a \textbf{complete lattice} whenever
+    \begin{gather*}
+        \bigwedge_{i\in I} x_i = \inf \{x_i \mid i \in I\}, \\
+        \bigvee_{i\in I} x_i = \sup \{x_i \mid i \in I\}.
+    \end{gather*}
+    exist in \(L\) for any sequence \((x_i)_{i \in I}\) with a countable or arbitary index set \(I\). A \textbf{bounded lattice} \(\mathcal{L}=(L,\vee,\wedge,0,1)\) is a lattice which satisfy
+    \[ 0 \le x \le 1 \quad (\forall x \in L) \]
+\end{frame}
+
+\begin{frame}
+    \frametitle{Quantum Logic}
+We say that a lattice \(\mathcal{L}\) is \textbf{distributive} if for all \(a,b,c \in L\),
+\begin{gather*}
+    a\wedge(b\vee c) = (a\wedge b) \vee (a\wedge c),\\
+    a \vee (b \wedge c) = (a \vee b) \wedge (a\vee c).
+\end{gather*}
+A lattice \(\mathcal{L}\) is modular if
+\[a \vee ( b \wedge c) = (a\vee b)\wedge c \quad (a\le c, a,b,c \in L)\]
+We say that for a unary operation \(': L\to L\) the \textbf{de Morgan laws} holds if for any sequence \((a_i)\) of elements from L we have
+\begin{gather*}
+    (\bigwedge_i a_i)' = \bigvee_i a'_i, \\
+    (\bigvee_i a_i)' = \bigwedge_i a'_i
+\end{gather*}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Quantum Logic}
+We say \(\perp: L \to L, a \mapsto a^\perp \) is said to be an \textbf{orthocomplementation} on a poset \(L\) with 0 and 1 if
+\begin{enumerate}
+    \item \((a^\perp)^\perp = a\) for any \(a \in L\),\\
+    \item if \(a \le b\), then \(b^\perp \le a^\perp \),
+    \item \(a \vee a^\perp=1\) for any \(a\in L\).
+\end{enumerate}
+The poset \(L\) with the orthocomplementation \(\perp\) is said to be \textbf{orthocomplemented}. Two elements \(a\) and \(b\) are said to be \textbf{orthogonal}, and we write \(a\perp b\), if \(a\le b^\perp\).
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Quantum Logic}
+    An orthocomplemented poset \(L\) is said to be an \textbf{orthomodular poset} (in short OMP) if \pause
+\begin{enumerate}
+    \item \(a\vee b \in L\) whenever \(a\perp b,a,b \in L\),\pause
+    \item (orthomodularity) if \(a\le b\), then \(b=a\vee(b\wedge a^\perp)\).\pause
+\end{enumerate}
+    For OMP \(L\), if we have
+    \[\bigvee^{\infty}_{i=1} a_i \in L\]
+    whenever \(a_i \perp a_j\) for \(i \neq j\), \(\{a_i\} \subset L\), then \(\mathcal{L}=(L,\vee,\wedge,0,1,\perp)\) is said to be a \textbf{quantum logic}.
+\end{frame}
+\section{Gleason's Theorem}
+\begin{frame}
+    \frametitle{Gleason's Theorem}
+    \begin{alertblock}{Gleason's Theorem}
+        Let \(\mathcal{H}\) be a Hilbert space with \(\dim \mathcal{H} \ge 3\). Then any bounded completely additive measure \(\mu\) on the projection lattice \(P(\mathcal{H})\) extends uniquely to a normal functional on the algebra \(B(\mathcal{H})\) of all bounded operators acting on \(H\).
+    \end{alertblock}
+    Since any normal functional on a von Neumann algebra can be represented by a trace class operator, Gleason's theorem gives a characterization of any bounded completely additive measure \(\mu\) on \(P(\mathcal{H})\) in the form
+    \begin{equation}
+        \mu(p)=\mathrm{tr} (Tp)
+    \end{equation}
+    for all \(p \in P(\mathcal{H})\) where the \(T\) is a trace class operator on \(\mathcal{H}\). The operator \(T\) appearing in the formula is called the \textbf{density meatrix} of given physical state.
+\end{frame}
+
+\begin{frame}{Gleason's Theorem}
+    \begin{block}{Remark}
+        The equation \(\mu(p)=\mathrm{tr} (Tp)\) can be rewritten in the form
+        \begin{equation}
+            \mu(p)=\sum_{n=1}^{\infty} \alpha_n \omega_{x_n}(p)
+        \end{equation}
+        where \(\omega_{x_n}=\left \langle x_n,px_n \right \rangle\) are vector states, corresponding to the orthonormal sequence \((x_n)\) of eigenvectors of \(T\).   Therefore, any completely additive probability measure on the Hilbert space structure is a \(\sigma\)-convex combination of pure vector states.
+    \end{block}
+
+
+\end{frame}
+
+\section{Hidden Variable Problem}
+\begin{frame}{Hidden Variable Problem}
+    \begin{block}{Theorem} Let \(\mathcal{H}\) be a Hilbert space with \(\dim \mathcal{H}\ge 3\). There is no 0-1 finitely additive state on the projection lattice \(P(\mathcal{H})\).
+    \end{block}\pause
+    The nonexistence of 0-1 state on an OML is connected with a long dispute on hidden variables in quantum theory.\pause The existence of sufficiently many hidden variables would mean that the probabilistic character of quantum mechnics disappears by adding certain new parameters.\pause The theorem says theat the projection lattice of a Hilbert space cannot be embedded into a Boolean algebra because any such embedding would induce a 0-1 state.\pause It is therefore an important consequence of Gleason Theorem that the Hilbert space model cannot be completed by considering axiliary hidden variables to a classical model without violating its inner structure.
+
+   
+\end{frame}
+\begin{frame}{Hidden Variable Problem}
+ Gleason's theorem says that the probability structure is determined by quantum logic, i.e. by the ordered structure of projections in a Hilbert space. The fact that only linear restriction can qualify for being quantum state has, besides hidden variable theory, other interesting physical consequences. One of them is indeterminacy principle.
+ \begin{block}{Indeterminancy Priciple}
+    Let \(p\) and \(q\) be atomic nonorthogonal projections in a Hilbert space \(\mathcal{H}\). For every completely additive state \(\mu\) on \(P(\mathcal{H})\) the following equivalence holds
+    \[\mu(p),\,\mu(q) \in \{0,1\} \Leftrightarrow \mu(p)=\mu(q)=0\]
+    In other words, no quantum state assigns sharp probability zero or one to two atomic nonorthogonal projection unless they are both false.
+ \end{block}   
+    
+\end{frame}
+
+\section{References}
+\begin{frame}{References}
+\begin{enumerate}
+    \item A. Dvurečenskij, ``Gleason's theorem and its applications", vol.60, Kluwer Academic Publishers Group, Dordrecht; Ister Science Press, Bratislava, 1993, p.xvi+325.
+    \item J. Hamhalter, ``Quantum measure theory", vol.134, Kluwer Academic Publishers Group, Dordrecht, 2003, p.viii+410.
+\end{enumerate}
+\end{frame}
+\end{document}

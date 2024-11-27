@@ -1,17 +1,40 @@
 \chapter{Preliminaries}
 
-
-
 \section{Elements of Operator Algebras}
 
-Let \(A\) be a \(C^\ast\)-algebra. A \emph{state} in \(C^\ast\)-algebra is a positive functional \(\rho\) which is \(\left \lVert \rho \right \rVert=1\).
+A \(C^\ast\)-algebra \(A\) is a Banach algebra over the field \(\mathbb{C}\) together with a map \(\ast: A \to A\), \(a \mapsto a^\ast\) which following properties:
+\begin{enumerate}
+    \item \(a^{\ast\ast}=a\) for all \(a \in A\),
+    \item \((a+b)^\ast=a^\ast+b^\ast\) for all \(a,b \in A\),
+    \item \((ab)^\ast = b^\ast a^\ast\) for all \(a,b \in A\),
+    \item \((\lambda a)^\ast = \bar{\lambda}a^\ast\) for all \(\lambda \in \mathbb{C}\) and \(a \in A\),
+    \item \(\left \lVert aa^\ast \right \rVert = \left \lVert a \right \rVert \left \lVert a^\ast \right \rVert\) for all \(a \in A\).
+\end{enumerate}
 
+A bounded linear map \(\pi:A \to B\) between \(C^\ast\)-algebras \(A\) and \(B\) is called a \(\ast\)-homomorphism if
+\begin{enumerate}
+    \item \(\pi(ab)=\pi(a)\pi(b)\)
+    \item \(\pi(a^\ast) = \pi(a)^\ast\)
+\end{enumerate}
+for all \(a,b \in A\).
 
-\begin{definition}
-    A von Neumann algebra is a \(C^\ast\)-algebra that can be faithfully represented as a strongly operator closed \(\ast\)-algebra of \(B(H)\)
-\end{definition}
+Let \(A\) be a \(C^\ast\)-algebra. A \emph{state} in \(C^\ast\)-algebra is a positive functional \(\rho\) which is \(\left \lVert \rho \right \rVert=1\). We shall denote the set of all states on \(A\) by \(S(A)\) which is called the \emph{state space} of A.
+
+A \(\ast\)-representation of a \(C^\ast\)-algebra \(A\) on a Hilbert space \(H\) is a ring homomorphism \(\pi: A \to B(H)\) such that
+\begin{enumerate}
+    \item \(\pi(a^\ast)=\pi(a)^\ast\) for all \(a \in A\),
+    \item \(\pi\) is nondegenerate.
+\end{enumerate}
+
+Let \(\varphi\) be a positive functional on the \(C^\ast\)-algebra \(A\). Then we can define a semidefinite inner product
+\[\langle x,y\rangle=\phi(y^\ast x) \quad \mbox{for all } x,y \in A\]
+We say that \(\varphi\) is \emph{faithful} if \(\varphi(x^\ast x)=0\) implies \(x=0\). The product is inner product if and only if \(\varphi\) is faithful.
+
 
 \begin{theorem}[Bicommutant theorem]
     A \(\ast\)-subalgebra \(M\) of \(B(H)\) that contains the unit of \(B(H)\) if \(M\) is a
 \end{theorem}
+
+\section{Quantum Logic}
+
 
