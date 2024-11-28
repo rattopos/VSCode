@@ -276,14 +276,16 @@ INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./20241129.toc
 INPUT ./20241129.toc
 INPUT ./20241129.toc
-INPUT ./20241129.toc
-INPUT ./20241129.toc
 INPUT C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc
+INPUT ./20241129.toc
+INPUT ./20241129.toc
 INPUT ./20241129.toc
 INPUT C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
 INPUT ./20241129.toc
 INPUT ./20241129.toc
+INPUT ./20241129.bbl
+INPUT C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans17-regular.luc
 OUTPUT 20241129.nav
 OUTPUT 20241129.toc
 OUTPUT 20241129.snm
@@ -291,6 +293,7 @@ INPUT ./20241129.aux
 INPUT ./20241129.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb

@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Dirac-von Neumann Axioms}{5}{0}{2}
-\beamer@sectionintoc {3}{Operator Algebras}{7}{0}{3}
-\beamer@sectionintoc {4}{Quantum Logic}{10}{0}{4}
-\beamer@sectionintoc {5}{Gleason's Theorem}{18}{0}{5}
-\beamer@sectionintoc {6}{Hidden Variable Problem}{21}{0}{6}
-\beamer@sectionintoc {7}{References}{28}{0}{7}
+\beamer@sectionintoc {2}{Operator Algebras}{11}{0}{2}
+\beamer@sectionintoc {3}{Dirac-von Neumann Axioms}{26}{0}{3}
+\beamer@sectionintoc {4}{Quantum Logic}{37}{0}{4}
+\beamer@sectionintoc {5}{Gleason's Theorem}{59}{0}{5}
+\beamer@sectionintoc {6}{Hidden Variable Problem}{62}{0}{6}
+\beamer@sectionintoc {7}{Quantum Probability}{71}{0}{7}
