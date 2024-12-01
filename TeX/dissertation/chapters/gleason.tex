@@ -2,6 +2,25 @@
 
 \section{Gleason's Theorem}
 
-\begin{theorem}
-    Let \(H\) be a Hilbert space with \(\dim H \ge 3\). Then any bounded completely additive measure \(\mu\) on the projection lattice \(P(H)\) extends uniquely to a normal functional on the algebra \(B(H)\) of all bounded operators action on \(H\).
+\begin{example}
+    Let \(H\) be a two-dimensional, real or complex Hilbert space. If
+    \[
+    \mu(M)=\begin{dcases}
+        1 & \mbox{if } M=H\\
+        0 & \mbox{if } M={0}\\
+        0 \mbox{ or } 1 & \mbox{if } \dim M =1
+    \end{dcases}
+    \]
+    where in the lattercase wse suppose \(\mu(M)+\mu(M^\perp)=1\), then \(\mu\) is a two-valued state on \(L(H)\). \cite[Example 3.1.1]{MR1256736}
+\end{example}
+
+\begin{theorem}[Gleason's Theorem]
+Let \(H\) be a separable, real or complex Hilbert space, \(\dim H \neq 2\), then for any state \(\mu\) on \(L(H)\) there exists a unique positive Hermitian trace operator \(T\) on \(H\) with \(\mathrm{tr}\, T =1\) such that
+\[\mu(M) = \mathrm{tr}(TP_M)\]
+for all \(M \in L(H)\).
+\begin{proposition}
+    Let \(\{e_1,\dots,e_n\}\) is a finite orthonormal system in \(X\). Then \(M=\{\mathrm{sp}(e_1,\dots,e_n) \in E(S)\}\) and
+    \[P_M(x) = \sum_{i=1}^{\infty} (x,e_i)e_i\]
+    for all \(x \in X\).
+\end{proposition}
 \end{theorem}

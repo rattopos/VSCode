@@ -64,10 +64,10 @@ Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described 
 
 \begin{frame}
     \frametitle{Operator Algebras}
-        \textbf{Banach algebra} is an associative algebra \(A\) over the real or complex that at the same time is also Banach space which satisfies
+        \textbf{Banach algebra} is an associative algebra \(\mathcal{A}\) over the real or complex that at the same time is also Banach space which satisfies
         \[\left \lVert xy \right \rVert \le \left \lVert x \right \rVert \left \lVert y \right \rVert\]\pause
         
-        \textbf{\(C^\ast\)-algebra} is a complex Banach algebra \(A\) together with an involution \(\ast:A \to A, x \mapsto x^\ast\) which satisfies\pause
+        \textbf{\(C^\ast\)-algebra} is a complex Banach algebra \(\mathcal{A}\) together with an involution \(\ast:A \to A, x \mapsto x^\ast\) which satisfies\pause
             \begin{enumerate}
                 \item \(x^{\ast\ast}=x\),\pause
                 \item \((x+y)^\ast=x^\ast+y^\ast\),\pause
@@ -88,6 +88,7 @@ Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described 
                 \item \textbf{projection} or \textbf{orthoprojector} if self-adjoint and \(A^2 = A\)
                 \item \textbf{positive} if \(A=B^\ast B\) for some \(B \in \mathcal{A}\), and we write \(A \ge 0\).
             \end{itemize}
+            A positive linear functional \(f:\mathclap{A} \to \mathbb{C}\) is a \textbf{state} if \(\left \lVert f \right \rVert =1\).
             Let \(\mathcal{A}\) and \(\mathcal{B}\) be two \(C^\ast\)-algebras; a mapping linear map \(\pi:\mathcal{A} \to \mathcal{B}\) such that
             \begin{enumerate}
                 \item \(\pi(AB)=\pi(A)\pi(B)\),
@@ -96,10 +97,10 @@ Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described 
             is said to be a \textbf{\(\ast\)-morphism}. A \textbf{representation} of a \(C^\ast\)-algebra \(\mathcal{A}\) is defined to be a pair \((H,\pi)\), where \(H\) is a complex Hilbert space and \(\pi\) is a \(\ast\)-morphism from \(\mathcal{A}\) into \(\mathcal{B}(H)\).
         \end{frame}
         \begin{frame}{Operator Algebras}
-            A \textbf{cyclic representation} of a \(C^\ast\)-algebra \(\mathcal{A}\) is defined to be a triple \((H,\pi,x)\) where \((H,\pi)\) is a representation of \(\mathcal{A}\) and \(x \in H\) is a cyclic vector for \(\{\pi(A): A \in \mathcal{A}\}\).
+            A \textbf{cyclic representation} of a \(C^\ast\)-algebra \(\mathcal{A}\) is defined to be a triple \((H,\pi,x)\) where \((H,\pi)\) is a representation of \(\mathcal{A}\) and \(x \in H\) is a \textbf{cyclic vector} for \(\{\pi(A): A \in \mathcal{A}\}\), i.e., \(\{\pi(A)x \mid A \in \mathcal{A}\}\) is dense in \(H\).
             \begin{block}{GNS representation}
-                Let \(\omega\) be a state over the \(C^\ast\)-algebra \(\mathcal{A}\). then there exists a cyclic rperesentation \((H_{\omega},\pi_{\omega},x_{\omega})\) of \(\mathcal{A}\) such that
-                \[\omega(A) = \left \langle x,\pi(A)x_{\omega} \right \rangle\]
+                Let \(\omega\) be a state over the \(C^\ast\)-algebra \(\mathcal{A}\). Then there exists a cyclic representation \((H_{\omega},\pi_{\omega},x_{\omega})\) of \(\mathcal{A}\) such that
+                \[\omega(A) = \left \langle x_{\omega},\pi_{\omega}(A)x_{\omega} \right \rangle\]
             \end{block}
             for all \(A \in \mathcal{A}\), where \(\left \lVert x_{\omega} \right \rVert=\left \lVert \omega \right \rVert=1\)
         \end{frame}
@@ -125,8 +126,8 @@ Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described 
             \begin{block}{Hilbert Space Formulation}
             Let \(\mathcal{H}\) be a fixed complex Hilbert space of countably infinite dimension.\pause
             \begin{itemize}
-                \item The observables of a qunatum system are defined to be the self-adjoint operators \(A\) on \(\mathcal{H}\).\pause
-                \item A state \(\psi\) of the quantum system is a unit vector of \(\mathcal{H}\), up to scalar multiples.\pause
+                \item The \textbf{observables} of a qunatum system are defined to be the self-adjoint operators \(A\) on \(\mathcal{H}\).\pause
+                \item A \textbf{state} \(\psi\) of the quantum system is a unit vector of \(\mathcal{H}\), up to scalar multiples.\pause
                 \item The expectation value of an observable \(A\) for a system in a state \(\psi\) is given by the inner product \(\left \langle \psi,A\psi \right \rangle\).
             \end{itemize}
         \end{block}
@@ -137,7 +138,7 @@ Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described 
             \begin{itemize}
                 \item The \textbf{bounded observables} of the quantum mechanical system are defined to be the self-adjoint elements of the \(C^\ast\)-algebra.\pause
                 \item The \textbf{states} of the quantum mechanical system are defined to be positive functional \(\omega\) such that \(\left \lVert \omega \right \rVert=1\).\pause
-                \item The value \(\omega(A)\) of a state \(\omega\) on an element \(A\) is the expectation value of the observable \(A\) if the quantum system is in the state \(\rho\).\pause
+                \item The value \(\omega(A)\) of a state \(\omega\) on an element \(A\) is the expectation value of the observable \(A\) if the quantum system is in the state \(\omega\).\pause
             \end{itemize}
         \end{block}        
         \begin{example}
@@ -155,7 +156,7 @@ Quantum logic began in 1936 when John von Neumann and Garret Birkhoff described 
         x\wedge y = \inf \{x,y\}, \\
         x \vee y = \sup \{x,y\}.
     \end{gather*}
-    exist in \(L\) for all \(x,y \in L\).\pause More generally, \emph{\(\sigma\)-lattice} or a \textbf{complete lattice} whenever
+    exist in \(L\) for all \(x,y \in L\).\pause More generally, \textbf{\(\sigma\)-lattice} or a \textbf{complete lattice} whenever
     \begin{gather*}
         \bigwedge_{i\in I} x_i = \inf \{x_i \mid i \in I\}, \\
         \bigvee_{i\in I} x_i = \sup \{x_i \mid i \in I\}.
@@ -171,7 +172,7 @@ We say that a lattice \(\mathcal{L}\) is \textbf{distributive} if for all \(a,b,
     a\wedge(b\vee c) = (a\wedge b) \vee (a\wedge c),\\
     a \vee (b \wedge c) = (a \vee b) \wedge (a\vee c).
 \end{gather*}\pause
-A lattice \(\mathcal{L}\) is modular if
+A lattice \(\mathcal{L}\) is \textbf{modular} if
 \[a \vee ( b \wedge c) = (a\vee b)\wedge c \quad (a\le c, a,b,c \in L)\]
 We say that for a unary operation \(': L\to L\) the \textbf{de Morgan laws} holds if for any sequence \((a_i)\) of elements from L we have
 \begin{gather*}
@@ -211,7 +212,7 @@ The poset \(L\) with the orthocomplementation \(\perp\) is said to be \textbf{or
         \item A \textbf{(finitely additive) measure} \(\mu\) on an OMP \(L\) is a map \(\mu: L \to \mathbb{C}\) such that \(\mu(x\vee y)=\mu(x) + \mu(y)\) whenever \(x \perp y\).\pause
         \item A measure \(\mu\) on OMP \(L\) is called a \textbf{state} if \(\mu\) has values in the unit interval \([0,1]\) and \(\mu(1)=1\).\pause
         \item A measure \(\mu\) is called \textbf{\(\sigma\)-additive} if \[\mu(\bigvee_{i=1}^{\infty}a_i)=\sum_{i=1}^{\infty} \mu(a_i)\] for any sequence \(a_i\) for \(a_i\perp a_j\) for \(i \neq j\).\pause
-        \item A measure \(\mu\) is called \textbf{completely additive} if \[\mu(\bigvee_{i \in I} a_i)=\sum_{i\in I} \mu(a_i)\] for any index set \(I\) and for any sequence \(a_i\) for \(a_i\perp a_j\) for \(i \neq j\).
+        \item A measure \(\mu\) is called \textbf{completely additive} if \[\mu(\bigvee_{i \in I} a_i)=\sum_{i\in I} \mu(a_i)\] for any index set \(I\) and for any sequence \((a_i)\) for \(a_i\perp a_j\) for \(i \neq j\).
     \end{itemize}
     
 \end{frame}
@@ -229,7 +230,7 @@ The poset \(L\) with the orthocomplementation \(\perp\) is said to be \textbf{or
         Suppose that \(\mathcal{A}\) is a von Neumann algebra of operators action on a real or complex Hilbert space \(H\). Denote by \(L_{\mathcal{A}(H)}\) the set of all closed subspaces of \(H\) whose orthoprojectors belongs to \(\mathcal{A}\). Then \(L_{\mathcal{A}(H)}\) is a sublogic of \(L(H)\).
     \end{example}\pause
     \begin{example}
-        Let \(\mathcal{P}(\mathcal{A})\) denote the set of all projections in a \(C^\ast\)-algebra \(\mathcal{A}\). Projections \(P_1\) and \(P_2\) are called orthogonal if \(P_1P_2 =0\). Give an ordering on \(\mathcal{P}(\mathcal{A})\) by \(P_1 \le P_2\) if and only if \(P_1P_2=P_2P_1=P_1\). If \(\mathcal{A}\) is unital, then the structure \(\mathcal{P}(\mathcal{A})\) is an OMP with the complement \(P^perp=1-P\). The structure \((\mathcal{P}(\mathcal{A}),\le,0,1,\perp)\) is a Boolean algebra if and only if, \(A\) is abelian.
+        Let \(\mathcal{P}(\mathcal{A})\) denote the set of all projections in a \(C^\ast\)-algebra \(\mathcal{A}\).\pause Projections \(P_1\) and \(P_2\) are called \textbf{orthogonal} if \(P_1P_2 =0\). Give an ordering on \(\mathcal{P}(\mathcal{A})\) by \(P_1 \le P_2\) if and only if \(P_1P_2=P_2P_1=P_1\).\pause If \(\mathcal{A}\) is unital, then the structure \(\mathcal{P}(\mathcal{A})\) is an OMP with the complement \(P^\perp=1-P\).\pause \textbf{The structure \((\mathcal{P}(\mathcal{A}),\le,0,1,\perp)\) is a Boolean algebra if and only if, \(A\) is abelian.}
     \end{example}
 \end{frame}
 
@@ -242,6 +243,8 @@ The poset \(L\) with the orthocomplementation \(\perp\) is said to be \textbf{or
     for all \(M \in L(H)\).
 \end{block}
 proof. \cite[p.131-149]{MR1256736}
+
+The operator \(T\) is called a \textbf{density matrix}.
 \end{frame}
 
 \begin{frame}{Gleason's Theorem}
@@ -250,10 +253,13 @@ proof. \cite[p.131-149]{MR1256736}
     for all \(M \in L(H)\).
 \end{block}
 \end{frame}
-
+\begin{frame}{Gleason's Theorem}
+    Gleason was motivated by Mackey's approach on a natural concept of probability measure on the orthomodular structure referred tody to quantum logic.\pause Gleason succeeded in describing all \(\sigma\)-additive probability measures on the logic of all closed subspaces of a separable Hilbert sapce and in showing that,\pause except for the obvious two dimensional counterexamplse, all probability measures can be idenfied with normal states(right-continuous states) in the sence of von Neumann approach.
+\end{frame}
+    
 \section{Hidden Variable Problem}
 \begin{frame}{Hidden Variable Problem}
-    \begin{block}{Theorem} Let \(H\) be a Hilbert space with \(\dim \mathcal{H}\ge 3\). There is no 0-1 finitely additive state on the projection lattice \(\mathcal{P}(H)\).
+    \begin{block}{Theorem} Let \(H\) be a Hilbert space with \(\dim H \ge 3\). There is no 0-1 finitely additive state, i.e., no probability measure attains only values 0 and 1 on the projection lattice \(\mathcal{P}(H)\).
     \end{block}\pause
     proof. \cite[Theorem 3.4.1]{MR2015280}
     The nonexistence of 0-1 state on an OML is connected with a long dispute on hidden variables in quantum theory.\pause The existence of sufficiently many hidden variables would mean that the probabilistic character of quantum mechnics disappears by adding certain new parameters.\pause The theorem says theat the projection lattice of a Hilbert space cannot be embedded into a Boolean algebra because any such embedding would induce a 0-1 state.\pause It is therefore an important consequence of Gleason Theorem that the Hilbert space model cannot be completed by considering axiliary hidden variables to a classical model without violating its inner structure.

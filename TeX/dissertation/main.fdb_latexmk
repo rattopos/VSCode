@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1732334173 "main.aux" "main.bbl" "main" 1732334177 0
-  "./dissertation.bib" 1731814742 6697 78e77fc339da31efd3973e1dac83256f ""
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1733024718 -1
+  "./dissertation.bib" 1733022095 7342 72e7794b989f717cff705d6292afbd02 ""
   "c:/texlive/2023/texmf-dist/bibtex/bst/base/abbrv.bst" 1693944006 20329 b5fed53e10044d0f8112183785c759b1 ""
-  "main.aux" 1732334176 1191 d7880f45c0b41be8a84e98803b93bffb "lualatex"
+  "main.aux" 1733024717 1256 a188366fc6d90fc3740f758f9ba16b1e "lualatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["lualatex"] 1732334174 "c:/Users/topos/Documents/VSCode/TeX/dissertation/main.tex" "main.pdf" "main" 1732334177 0
+["lualatex"] 1733024714 "c:/Users/topos/Documents/VSCode/TeX/dissertation/main.tex" "main.pdf" "main" 1733024718 0
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1699762011 128402 11a92912da4469c89f5e70de2dd03e22 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1699763837 136304 ada1666199db1f90f82864282f9b602c ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1696517031 127319 00171b229bfec983f747e1f65f6deb21 ""
@@ -40,10 +40,13 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1693944320 1124 6c73e740cf17375f03eec0ee63599741 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1693944320 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1693944320 1120 8b7d695260f3cff42e636090a8002094 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1693943629 30251 6afa5cb1d0204815a708a080681d4674 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1693943629 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1693943629 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1693943629 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1693943629 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1693943629 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1693943629 32587 65067f817f408bc71a7312f3d9828a9b ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1693943629 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1693943630 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1693950464 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -127,12 +130,12 @@
   "c:/texlive/2023/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1693949731 13565 c514d92e6ff6be7b2f35d8e0eb56185c ""
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1693966163 4703454 686ac940143bc757f1f10cefc70f8e79 ""
   "c:/texlive/2023/texmf-var/web2c/luahbtex/lualatex.fmt" 1695196759 12202031 a310c1b76090447272667184acdd5e8d ""
-  "chapters/gleason.tex" 1732334167 343 beb8effc10570e4ad4f416934141018f ""
-  "chapters/prelim.tex" 1732334167 2427 791278e1e4148e021fc4414b26e4b9f5 ""
-  "main.aux" 1732334176 1191 d7880f45c0b41be8a84e98803b93bffb "lualatex"
-  "main.bbl" 1732334174 1414 55db65f085c5eb4971ac2583c76f45f6 "bibtex main"
+  "chapters/gleason.tex" 1733024713 1059 f9c321c8a71d103c4decd27e2b899291 ""
+  "chapters/prelim.tex" 1733024492 2796 57bb3dea1b5a03b67541b6bcd5c6efb6 ""
+  "main.aux" 1733024717 1256 a188366fc6d90fc3740f758f9ba16b1e "lualatex"
+  "main.bbl" 1733023039 1720 1a4047de9c699739b9a773d966a40c27 "bibtex main"
   "main.tex" 1732333966 3179 9d77be4d4de45dceee86c1f76b4ef12b ""
-  "main.toc" 1732334176 330 de8ac771db15fd8e7eeb65d96d3e31f3 "lualatex"
+  "main.toc" 1733024717 330 de8ac771db15fd8e7eeb65d96d3e31f3 "lualatex"
   (generated)
   "main.aux"
   "main.log"

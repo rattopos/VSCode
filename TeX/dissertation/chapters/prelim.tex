@@ -20,21 +20,27 @@ for all \(a,b \in A\).
 
 Let \(A\) be a \(C^\ast\)-algebra. A \emph{state} in \(C^\ast\)-algebra is a positive functional \(\rho\) which is \(\left \lVert \rho \right \rVert=1\). We shall denote the set of all states on \(A\) by \(S(A)\) which is called the \emph{state space} of A.
 
-A \(\ast\)-representation of a \(C^\ast\)-algebra \(A\) on a Hilbert space \(H\) is a ring homomorphism \(\pi: A \to B(H)\) such that
+A \(\ast\)-representation of a \(C^\ast\)-algebra \(A\) on a Hilbert space \(H\) is a ring homomorphism \(\pi: A \to B(H)=\{f \mid f \mbox{ is a bounded linear operator on }H\}\) such that
 \begin{enumerate}
     \item \(\pi(a^\ast)=\pi(a)^\ast\) for all \(a \in A\),
     \item \(\pi\) is nondegenerate.
 \end{enumerate}
 
-Let \(\varphi\) be a positive functional on the \(C^\ast\)-algebra \(A\). Then we can define a semidefinite inner product
-\[\langle x,y\rangle=\phi(y^\ast x) \quad \mbox{for all } x,y \in A\]
-We say that \(\varphi\) is \emph{faithful} if \(\varphi(x^\ast x)=0\) implies \(x=0\). The product is inner product if and only if \(\varphi\) is faithful.
-
-
-\begin{theorem}[Bicommutant theorem]
-    A \(\ast\)-subalgebra \(M\) of \(B(H)\) that contains the unit of \(B(H)\) if \(M\) is a
+\begin{theorem}[GNS representation]
+    Given a state \(\rho\) of \(A\), there is a \(\ast\)-representation \(\pi\) of \(A\) acting on a Hilbert space \(H\) with unit cylic vector \(\psi\) such that
+    \[\rho(a)=\left \langle \pi(a) \psi,\psi  \right \rangle\]
+    for every \(a\) in \(A\). Moreover, the representation is unique up to unitary equivalence.
 \end{theorem}
+\begin{proof}
+    \cite[Theorem 4.5.2]{MR1468229}
+\end{proof}
 
+Let \(X\) be an inner product space. A \emph{spilitting subspace} of \(X\) is the subspace \(M\) of \(X\) which is the following property holds,
+\[M+M^\perp=S.\]
+Then any vector \(x \in X\) can be uniquely expressed in the form
+\[x=x_M+x_{M^{\perp}},\]
+where \(x_M \in M\) and \(x_{M^\perp} \in M^\perp\). We denote by \(E(X)\) the set of all splitting subspaces.
+The map \(P_M:X\to X\) such that \(P_M(x)=x_M\) for all \(x \in X\) is a bounded linear operator with \(\left \lVert P_M \right \rVert=1\) whenever \(M \neq \{0\}\). Moreover, \(P^2_M=P_M\), \(P_M\) is self-adjoint, and \(\mathrm{ran}\, P_M = M\). The operator \(P_M\) is called the \emph{orthoprojector} or \emph{projection} from \(X\) onto \(M\). It is clear that \(I-P_M\) is an orthoprojector onto \(M^\perp\).
 \section{Quantum Logic}
 
 

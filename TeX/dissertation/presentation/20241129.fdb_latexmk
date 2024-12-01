@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex 20241129"] 1732815418 "20241129.aux" "20241129.bbl" "20241129" 1732815897 0
-  "./refs.bib" 1732813742 1573 c8e8795e9ad37a9e1164caf58c7c3a83 ""
-  "20241129.aux" 1732815895 7542 9c2320361fc721530f8ef81a0a66cd19 "lualatex"
+["bibtex 20241129"] 1732851770 "20241129.aux" "20241129.bbl" "20241129" 1732851782 0
+  "./refs.bib" 1732851633 1573 c8e8795e9ad37a9e1164caf58c7c3a83 ""
+  "20241129.aux" 1732851780 7670 9ea97391004c37f048a99f2717dd37c0 "lualatex"
   "c:/texlive/2023/texmf-dist/bibtex/bst/base/alpha.bst" 1693944006 23907 a5f93555796fb564b924339521f10a7c ""
   (generated)
   "20241129.bbl"
   "20241129.blg"
   (rewritten before read)
-["lualatex"] 1732815887 "c:/Users/topos/Documents/VSCode/TeX/dissertation/presentation/20241129.tex" "20241129.pdf" "20241129" 1732815897 0
-  "20241129.aux" 1732815895 7542 9c2320361fc721530f8ef81a0a66cd19 "lualatex"
-  "20241129.bbl" 1732815419 664 e57f39bf0d35abe74b77f0e569aede10 "bibtex 20241129"
-  "20241129.nav" 1732815895 4266 fc9bbc88b6c7dfabf74ccc3bbefe63e7 "lualatex"
-  "20241129.out" 1732815895 950 272ab88d02cebf74c0df3d4244aae7d4 "lualatex"
-  "20241129.tex" 1732815886 17576 4ffdbf16852aafa22ce284dead6c6fd9 ""
-  "20241129.toc" 1732815895 383 b42dc03f2a448afcd6fbfa572e92704c "lualatex"
+["lualatex"] 1732851770 "c:/Users/topos/Documents/VSCode/TeX/dissertation/presentation/20241129.tex" "20241129.pdf" "20241129" 1732851782 0
+  "20241129.aux" 1732851780 7670 9ea97391004c37f048a99f2717dd37c0 "lualatex"
+  "20241129.bbl" 1732851770 664 e57f39bf0d35abe74b77f0e569aede10 "bibtex 20241129"
+  "20241129.nav" 1732851780 4358 c277ac4f6dc976df72632fe26ac98253 "lualatex"
+  "20241129.out" 1732851780 950 272ab88d02cebf74c0df3d4244aae7d4 "lualatex"
+  "20241129.tex" 1732851754 18561 f6a299f0167fa5b9d610a6fc2e24d9a9 ""
+  "20241129.toc" 1732851780 383 d0a634125bdacac2b4af30e6d9c1e2aa "lualatex"
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1696517031 127319 00171b229bfec983f747e1f65f6deb21 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc" 1696517764 128508 9d736aff56dba1452273f87ab364ca34 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1696517764 128138 1e6dde7eb77a201a51c19e287169893f ""
@@ -25,7 +25,7 @@
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-oblique.luc" 1732633280 129057 4ab43d5b3b967a84f6a27792d0e580f3 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/fonts/otl/lmsans8-regular.luc" 1732633142 127588 78ac38f37b914e3bbb7e4fd1c56403e8 ""
   "C:/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1696517030 293195 54aa1cbb71d0c69b81612b321fc6d4dc ""
-  "c:/Users/topos/Documents/VSCode/TeX/dissertation/presentation/20241129.tex" 1732815886 17576 4ffdbf16852aafa22ce284dead6c6fd9 ""
+  "c:/Users/topos/Documents/VSCode/TeX/dissertation/presentation/20241129.tex" 1732851754 18561 f6a299f0167fa5b9d610a6fc2e24d9a9 ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1693949379 111536 fc712364c8d0a1b548d46c76f2678030 ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf" 1693949379 107448 8e50c3a45500908ba7bb0c0b72320fc7 ""
   "c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf" 1693949379 101412 5240dbb86d81bf33d4dc09bf1db721f5 ""

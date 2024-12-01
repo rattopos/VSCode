@@ -50,39 +50,41 @@
 \headcommand {\beamer@framepages {52}{55}}
 \headcommand {\slideentry {4}{0}{7}{56/56}{}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {4}{0}{8}{57/58}{}{0}}
-\headcommand {\beamer@framepages {57}{58}}
-\headcommand {\beamer@sectionpages {37}{58}}
-\headcommand {\beamer@subsectionpages {37}{58}}
-\headcommand {\sectionentry {5}{Gleason's Theorem}{59}{Gleason's Theorem}{0}}
-\headcommand {\slideentry {5}{0}{1}{59/59}{}{0}}
-\headcommand {\beamer@framepages {59}{59}}
-\headcommand {\slideentry {5}{0}{2}{60/60}{}{0}}
-\headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {5}{0}{3}{61/61}{}{0}}
-\headcommand {\beamer@framepages {61}{61}}
-\headcommand {\beamer@sectionpages {59}{61}}
-\headcommand {\beamer@subsectionpages {59}{61}}
-\headcommand {\sectionentry {6}{Hidden Variable Problem}{62}{Hidden Variable Problem}{0}}
-\headcommand {\slideentry {6}{0}{1}{62/62}{}{0}}
+\headcommand {\slideentry {4}{0}{8}{57/61}{}{0}}
+\headcommand {\beamer@framepages {57}{61}}
+\headcommand {\beamer@sectionpages {37}{61}}
+\headcommand {\beamer@subsectionpages {37}{61}}
+\headcommand {\sectionentry {5}{Gleason's Theorem}{62}{Gleason's Theorem}{0}}
+\headcommand {\slideentry {5}{0}{1}{62/62}{}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {6}{0}{2}{63/67}{}{0}}
-\headcommand {\beamer@framepages {63}{67}}
-\headcommand {\slideentry {6}{0}{3}{68/70}{}{0}}
-\headcommand {\beamer@framepages {68}{70}}
-\headcommand {\beamer@sectionpages {62}{70}}
-\headcommand {\beamer@subsectionpages {62}{70}}
-\headcommand {\sectionentry {7}{Quantum Probability}{71}{Quantum Probability}{0}}
-\headcommand {\slideentry {7}{0}{1}{71/71}{}{0}}
-\headcommand {\beamer@framepages {71}{71}}
-\headcommand {\slideentry {7}{0}{2}{72/75}{}{0}}
-\headcommand {\beamer@framepages {72}{75}}
-\headcommand {\slideentry {7}{0}{3}{76/76}{}{0}}
-\headcommand {\beamer@framepages {76}{76}}
-\headcommand {\slideentry {7}{0}{4}{77/77}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{63/63}{}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {5}{0}{3}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {5}{0}{4}{65/67}{}{0}}
+\headcommand {\beamer@framepages {65}{67}}
+\headcommand {\beamer@sectionpages {62}{67}}
+\headcommand {\beamer@subsectionpages {62}{67}}
+\headcommand {\sectionentry {6}{Hidden Variable Problem}{68}{Hidden Variable Problem}{0}}
+\headcommand {\slideentry {6}{0}{1}{68/68}{}{0}}
+\headcommand {\beamer@framepages {68}{68}}
+\headcommand {\slideentry {6}{0}{2}{69/73}{}{0}}
+\headcommand {\beamer@framepages {69}{73}}
+\headcommand {\slideentry {6}{0}{3}{74/76}{}{0}}
+\headcommand {\beamer@framepages {74}{76}}
+\headcommand {\beamer@sectionpages {68}{76}}
+\headcommand {\beamer@subsectionpages {68}{76}}
+\headcommand {\sectionentry {7}{Quantum Probability}{77}{Quantum Probability}{0}}
+\headcommand {\slideentry {7}{0}{1}{77/77}{}{0}}
 \headcommand {\beamer@framepages {77}{77}}
-\headcommand {\beamer@partpages {1}{77}}
-\headcommand {\beamer@subsectionpages {71}{77}}
-\headcommand {\beamer@sectionpages {71}{77}}
-\headcommand {\beamer@documentpages {77}}
-\headcommand {\gdef \inserttotalframenumber {31}}
+\headcommand {\slideentry {7}{0}{2}{78/81}{}{0}}
+\headcommand {\beamer@framepages {78}{81}}
+\headcommand {\slideentry {7}{0}{3}{82/82}{}{0}}
+\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\slideentry {7}{0}{4}{83/83}{}{0}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\beamer@partpages {1}{83}}
+\headcommand {\beamer@subsectionpages {77}{83}}
+\headcommand {\beamer@sectionpages {77}{83}}
+\headcommand {\beamer@documentpages {83}}
+\headcommand {\gdef \inserttotalframenumber {32}}

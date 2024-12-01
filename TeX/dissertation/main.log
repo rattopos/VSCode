@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.20)  23 NOV 2024 12:56
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.20)  1 DEC 2024 12:45
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/topos/Documents/VSCode/TeX/dissertation/main.tex
@@ -260,11 +260,6 @@ Chapter 1.
 
 ]) (./chapters/gleason.tex [4]
 Chapter 2.
-
-Overfull \hbox (0.69725pt too wide) in paragraph at lines 6--7
-\TU/lmr/m/it/10.95 com-pletely ad-di-tive mea-sure $\OML/cmm/m/it/10.95 $ \TU/lmr/m/it/10.95 on the pro-jec-tion lat-tice $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 H\OT1/cmr/m/n/10.95 )$ \TU/lmr/m/it/10.95 ex-tends uniquely
- []
-
 ) (./main.bbl [5
 
 ]) [6
@@ -277,19 +272,19 @@ L3 programming layer <2023-08-29>
 )
 
 Here is how much of LuaTeX's memory you used:
- 3437 strings out of 477259
+ 3444 strings out of 477259
  100000,1977958 words of node,token memory allocated
- 517 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 57 glue_spec, 8 attribute_list, 1 write nodes
-   avail lists: 2:391,3:164,4:9,5:245,6:36,7:5080,8:18,9:210,10:8,11:424
- 24671 multiletter control sequences out of 65536+600000
+ 528 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 12 attribute, 56 glue_spec, 12 attribute_list, 1 write nodes
+   avail lists: 2:369,3:169,4:15,5:246,6:36,7:5080,8:22,9:215,10:13,11:424
+ 24678 multiletter control sequences out of 65536+600000
  49 fonts using 3529047 bytes
- 70i,6n,75p,1287b,218s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (7 pages, 89339 bytes).
+ 70i,7n,75p,1287b,231s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (7 pages, 117764 bytes).
 
-PDF statistics: 92 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
