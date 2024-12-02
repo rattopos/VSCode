@@ -41,6 +41,121 @@ Then any vector \(x \in X\) can be uniquely expressed in the form
 \[x=x_M+x_{M^{\perp}},\]
 where \(x_M \in M\) and \(x_{M^\perp} \in M^\perp\). We denote by \(E(X)\) the set of all splitting subspaces.
 The map \(P_M:X\to X\) such that \(P_M(x)=x_M\) for all \(x \in X\) is a bounded linear operator with \(\left \lVert P_M \right \rVert=1\) whenever \(M \neq \{0\}\). Moreover, \(P^2_M=P_M\), \(P_M\) is self-adjoint, and \(\mathrm{ran}\, P_M = M\). The operator \(P_M\) is called the \emph{orthoprojector} or \emph{projection} from \(X\) onto \(M\). It is clear that \(I-P_M\) is an orthoprojector onto \(M^\perp\).
+\begin{proposition}
+    Let \(P\) is an idempotent linear operator on \(X\) which is self-adjoint. If \(M=\{x\in X \mid Px=x\}\), then \(M \in E(S)\) and \(P_M = P\).
+    \begin{proof}
+        We have
+        \[\left \langle x,z-Pz \right \rangle=\left \langle x,z \right \rangle-\left \langle x,Pz \right \rangle=\left \langle x-Px,z \right \rangle=0\]
+        for all \(x \in M\) and for all \(z \in X\). Therefore, \(z-Pz \in M^\perp\), and \[z=Pz+(I-P)z\]
+    \end{proof}
+\end{proposition}
+\begin{corollary}
+    If \(P\) is the orthoprojector onto a splitting subspaces \(M\) of \(X\), then \(I_P\) is the orth projector onto \(M^\perp\) and \(M^\perp=\{x\in X \mid Px=0\}\).
+\end{corollary}
+\begin{proposition}
+    Let \(\{e_1,\dots,e_n\}\) is a finite orthonormal system in \(X\). Then \(M=\{\mathrm{sp}(e_1,\dots,e_n) \in E(S)\}\) and
+    \[P_M(x) = \sum_{i=1}^{n} (x,e_i)e_i\]
+    for all \(x \in X\).
+\end{proposition}
+\begin{lemma}
+A splitting subspace \(M\) of \(X\) is invariant under an operator \(T\) on \(X\) if and only if \(AP_M=P_MTP_M\).
+\end{lemma}
+\begin{lemma}
+Let \(M\) and \(N\) be two splitting subspaces. Then the followings are equivalent.
+\begin{enumerate}
+    \item \(M \perp N\).
+    \item \(P_M P_N = O\)
+\end{enumerate}
+\begin{proof}
+    If \(M\perp N\), then \(N \subset M^\perp\). We have \(P_Nx \in N\) for all \(x \in X\), so that \(P_MP_N=0\) for all \(x \in X\). If \(P_M P_N=O\), conversely, then \(P_Mx=P_M P_N x =0\) for all \(x \in N\). Therefore \(N \subset M^\perp\), so that \(M\perp N\).
+\end{proof}
+\end{lemma}
+We say that two orthoporjectors \(P\) and \(Q\) on \(X\) are \emph{orthogonal} if \(PQ=O\), and we write \(P\perp Q\).
+\begin{lemma}
+    Let \(M\) and \(N\) be two splitting subspaces of \(X\). The following statements are equivalent:
+    \begin{enumerate}
+        \item \(P_M \le P_N\).
+        \item \(\left \lVert P_M \right \rVert \le \left \lVert P_Nx \right \rVert\) for all \(x \in X\).
+        \item \(M \subset N\).
+        \item \(P_M P_N = P_M\).
+        \item \(P_N P_M = P_M\).
+    \end{enumerate}
+\end{lemma}
+
 \section{Quantum Logic}
 
+Let \(L\) be a poset. For a sequence \((a_i)_{i\in I}\) in \(L\), the \emph{join} is defined by \[\bigvee_{i \in I} a_i = \sup \{a_i \mid i \in I\},\]
+and the \emph{meet} is defined by
+    \[\bigwedge_{i \in I} a_i = \inf \{a_i \mid i \in I\}.\]
+    \begin{definition}
+        Let \(L\) be a poset. Then
+        \begin{itemize}
+            \item \(L\) is a \emph{lattice} if \(a\vee b\) and \(a \wedge b\) exist in L for any \(a,b \in L\).
+            \item \(L\) is a \emph{\(\sigma\)-lattice} if \(\bigvee_{i \in I} a_i\) and \(\bigwedge_{i\in I} a_i\) exist in \(L\) for any sequence \((a_i)_{i\in I}\) with a countable index set \(I\).
+            \item \(L\) is a \emph{complete lattice} if \(\bigvee_{i \in I} a_i\) and \(\bigwedge_{i \in I} a_i\) exist in \(L\) for any sequence \((a_i)_{i\in I}\) with an arbitrary index set \(I\).
+        \end{itemize}
+    \end{definition}
+\begin{definition}
+    A poset \(L\) is said to be \emph{bounded} if there exist elements \(0\) and \(1\) in \(L\),
+    \[0\le x \le 1\]
+    for all \(x \in L\).
+\end{definition}
+A unary operation \(\perp: L \to L, a \mapsto a^\perp\) is said to be an \emph{orthocomplementation} on a bounded poset \(L\) if
+\begin{enumerate}
+    \item \((a^\perp)^\perp=a\),
+    \item if \(a \le b\), then \(b^\perp\le a^\perp\),
+    \item \(a\vee a^\perp=1\)
+\end{enumerate}
+for any \(a,b \in L\). A bounded poset \(L\) with the orthocomplementation \(\perp\) is called \emph{orthocomplemented}.
+\begin{definition}
+    An orthocomplemented poset \(L\) is said to be an \emph{orthomodular poset} (in short OMP) if
+    \begin{enumerate}
+        \item \(a \vee b \in L\) if \(a\perp b\),
+        \item (orthomodularity) \(b=a\vee(b \wedge a^\perp)\) if \(a \le b\),
+    \end{enumerate}
+    hold for all \(a,b \in L\).
+\end{definition}
+We denote an orthomodular lattice by OML. If an OMP \(L\) have the following property
+\[\bigvee_{i=1}^\infty a_i \in L\]
+for any pairwise orthgonal sequence \((a_i)_{i=1}^{\infty}\),
+\(L\) is called a \emph{quantum logic}.
+\begin{definition}
+    Let \(L_1\) amd \(L_2\) be two OMPs. A mapping \(h:L_1 \to L_2\) is called a \emph{homomorphism} if
+    \begin{enumerate}
+        \item \(h(1)=1\),
+        \item \(h(a)\perp h(b)\) if \(a\perp b\) in \(L_1\),
+        \item \(h(a\vee b)=h(a)\vee h(b)\) if \(a\perp b\) in \(L_1\).
+    \end{enumerate}
+    In addition, we call \(h\) a \(\sigma\)-homomorphism if
+    \[h(\bigvee_{i=1}^{\infty} a_i) = \bigvee_{i=1}^{\infty} h(a_i)\]
+    holds for any sequence of pairwise orthogonal elements \((a_i)_{i=1}^{\infty}\) of \(L_1\).
+\end{definition}
+\begin{definition}
+    Let \(L\) be an OMP. Consider a map \(\mu:L\to [-\infty,\infty]\) such that
+    \begin{gather}
+        \mu(0)=0,\\
+        \mu(\bigvee_{i \in I} a_i) = \sum_{i \in I} \mu(a_i), \mbox{ for any pairwise orthogonal sequence } (a_i)_{i \in I}.
+    \end{gather}
+    Then,
+    \begin{enumerate}
+        \item \(\mu\) is called a \emph{finitely additive measure} or a \emph{charge} if (1.2) holds for any finite set \(I\),
+        \item \(\mu\) is called a \emph{signed measure} if (1.2) holds for any countably infinite set \(I\),
+        \item \(\mu\) is called a \emph{completely additive signed measure} if (1.2) holds for any arbitrary set \(I\).
+    \end{enumerate}
+If \(\mu\) is nonnegative and \(\mu(1)=1\), then we call \(\mu\) a \emph{state}.
+\end{definition}
 
+\begin{example}
+    Let \(H\) be a Hilbert space over a real or complex. The class
+    \[L(H)=\{M \mid M \mbox{ is a closed subspace of } H\}\]
+    is a quantum logic, where the partial ordering is the inclusion, the meet and join are defined as follows
+    \[\bigwedge_{i \in I} M_i, \quad \bigvee_{i \in I} M_i = \mathrm{cl}(\mathrm{span(\bigcup_{i\in I} M_i)}),\]
+    and the orthocomplementation \(\perp:M \mapsto M^\perp\).
+\end{example}
+
+\begin{example}
+    Let \(H\) be a Hilbert space over a real or complex. The class
+    \[\mathcal{P}(H)=\{P \mid P \mbox{ is a orthoprojector on } H\}\]
+    is a quantum logic where \(P\le Q\) if and only if \[\left \langle Px,x \right \rangle \le \left \langle Qx,x \right \rangle\]
+    for all \(x \in H\) and \(P^\perp=I-P\).
+\end{example}

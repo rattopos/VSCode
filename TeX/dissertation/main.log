@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.20)  1 DEC 2024 12:45
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2023.9.20)  2 DEC 2024 00:12
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/topos/Documents/VSCode/TeX/dissertation/main.tex
@@ -258,11 +258,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Chapter 1.
 [3
 
-]) (./chapters/gleason.tex [4]
+] [4] [5] [6]) (./chapters/gleason.tex [7]
 Chapter 2.
-) (./main.bbl [5
+[8
 
-]) [6
+] [9] [10] [11]) (./main.bbl [12]) [13
 
 ] (./main.aux)
  ***********
@@ -272,19 +272,19 @@ L3 programming layer <2023-08-29>
 )
 
 Here is how much of LuaTeX's memory you used:
- 3444 strings out of 477259
+ 3463 strings out of 477259
  100000,1977958 words of node,token memory allocated
- 528 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 12 attribute, 56 glue_spec, 12 attribute_list, 1 write nodes
-   avail lists: 2:369,3:169,4:15,5:246,6:36,7:5080,8:22,9:215,10:13,11:424
- 24678 multiletter control sequences out of 65536+600000
+ 645 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 40 attribute, 57 glue_spec, 40 attribute_list, 1 write nodes
+   avail lists: 2:527,3:191,4:15,5:379,6:42,7:5068,8:52,9:558,10:13,11:424
+ 24697 multiletter control sequences out of 65536+600000
  49 fonts using 3529047 bytes
- 70i,7n,75p,1287b,231s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (7 pages, 117764 bytes).
+ 70i,10n,75p,1287b,302s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (14 pages, 177618 bytes).
 
-PDF statistics: 104 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+PDF statistics: 135 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

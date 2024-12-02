@@ -1,26 +1,135 @@
 \chapter{Gleason's Theorem}
 
-\section{Gleason's Theorem}
+\section{Frame Functions}
 
-\begin{example}
-    Let \(H\) be a two-dimensional, real or complex Hilbert space. If
-    \[
-    \mu(M)=\begin{dcases}
-        1 & \mbox{if } M=H\\
-        0 & \mbox{if } M={0}\\
-        0 \mbox{ or } 1 & \mbox{if } \dim M =1
-    \end{dcases}
-    \]
-    where in the lattercase wse suppose \(\mu(M)+\mu(M^\perp)=1\), then \(\mu\) is a two-valued state on \(L(H)\). \cite[Example 3.1.1]{MR1256736}
-\end{example}
+\begin{definition}
+    Let \(H\) be a Hilbert space, and let \(\mathcal{S}(H)={x \in H \mid \left \lVert x \right \rVert=1}\). A map \(f:\mathcal{S}(H) \to \mathbb{R}\) is a frame function on \(H\) if there is a constant \(w\), called \emph{weight} of \(f\), such thet for any orthonormal basis \(\{x_i \mid i \in I\}\) of \(H\) we have
+    \[\sum_{i \in I} f(x_i)=w.\]
+\end{definition}
 
-\begin{theorem}[Gleason's Theorem]
-Let \(H\) be a separable, real or complex Hilbert space, \(\dim H \neq 2\), then for any state \(\mu\) on \(L(H)\) there exists a unique positive Hermitian trace operator \(T\) on \(H\) with \(\mathrm{tr}\, T =1\) such that
-\[\mu(M) = \mathrm{tr}(TP_M)\]
-for all \(M \in L(H)\).
-\begin{proposition}
-    Let \(\{e_1,\dots,e_n\}\) is a finite orthonormal system in \(X\). Then \(M=\{\mathrm{sp}(e_1,\dots,e_n) \in E(S)\}\) and
-    \[P_M(x) = \sum_{i=1}^{\infty} (x,e_i)e_i\]
-    for all \(x \in X\).
-\end{proposition}
+\begin{remark} Let \(f\) be a frame function on \(H\). Then,
+    \begin{enumerate}
+        \item \(f(c x) = f(x)\) for any sacalar \(\left \lvert c \right \rvert=1\),
+        \item \(f\rvert_{\mathcal{S}(M)} \) is a frame function on \(M\) for any closed subspace \(M\) of \(H\).
+    \end{enumerate}
+\end{remark}
+
+ A frame function \(f\) on \(H\) is \emph{bounded} if
+ \[\sup_{x \in \mathcal{S}(H)} \left \lvert f(x) \right \rvert < \infty\]
+ , \(f\) is \emph{semibounded} if
+ \[\inf_{x \in \mathcal{S}(H)} \left \lvert f(x) \right \rvert > -\infty\]
+ and \(f\) is regular if there is a Hermitian operator \(T\) on \(H\) such that
+ \[f(x) = \left \langle Tx,x \right \rangle\]
+ for all \(x \in \mathcal{S}(H)\).
+
+ We will prove the regularity of the semibounded frame function for general Hilbert spaces of dimension 3 or higher, starting from the case where \(H=\mathbb{R}^3\).
+    \begin{itemize}
+        \item \(\theta(p,q)\) denotes the angle between vectors \(p\) and \(q\) on \(\mathcal{S}(\mathbb{R}^3)\).
+        \item \(N_p= \{s \in \mathcal{S}(H) \mid \theta(p,s) \le \pi/2\}\) is called the \emph{northern hemisphere} with respect to \(p\).
+        \item \(E_p= \{s \in \mathcal{S}(H) \mid \theta(p,s)=\pi/2\}\) is called the \emph{equator} with respect to \(p\).
+        \item A function \(l_p\) on \(N_p\) given by \[l_p(s)=\cos^2 \theta(p,s)=\left \langle p,s \right \rangle^2\] which is called the \emph{latitude function}.
+        \item Let \(s \in N_p \setminus \{p\}\) with \(l_p(s)>0\). There exists exactly one great circle \(C(s)\), having s as its northern most point.
+        \item The great half-circle \(D(s)=C(S) \cap N_p\) is called \emph{decscent} through \(s\).
+        \item A \emph{frame} is a triple \((p,q,r)\) such that \(\{p,q,r\}\) is orthonormal basis in \(\mathbb{R}^3\).
+     \end{itemize}
+\begin{theorem}
+    \label{quaratic form-r3}
+    Let \(f\) be a semibounded frame function on \(\mathbb{R}^3\) with the weight \(w\). Let \begin{gather*}
+        M=\sup_{x \in \mathcal{S}(\mathbb{R}^3)} f(x), \\
+        m=\inf_{x \in \mathcal{S}(\mathbb{R}^3)} f(x), \\
+        \alpha=w-M-m.
+    \end{gather*}
+Then, there is a frame \(p,q,r\) such that
+\[f(s)=Mx^2+\alpha y^2 + m z^2\]
+where \((x,y,z)\) is the coordinate of \(s\) with respect to the frame \((p,q,r)\).
+\begin{proof}
+    \cite[Theorem 3.2.13]{MR1256736}
+\end{proof}
+\end{theorem}
+
+ Let \(H\) be a complex Hilbert space, a closed real-linear subspace \(M\) of \(H\) is \emph{completely real} if the inner product \(\left \langle \cdot,\cdot \right \rangle\) takes only real values on \(M\times M\).
+
+ \begin{lemma}
+    \label{regularity lemma}
+    Let \(f\) be a semibounded frame function on an \(n\)-dimensional Hilbert space \(H_n\) which is regular on each completely real subsapce. Then \(f\) is regular.
+    \begin{proof}
+        Suppose \(f\) is a semibounded frame function on \(H_n\) which is regular on each completely real subspace. Let \(M=\sup_{x \in \mathcal{S}(H)} f(x)\). Choose a sequence \((x_k)\) in \(\mathcal{S}(H_n)\) such that \(\lim_{k} f(x_k) = M\). Since \(\mathcal{S}(H_n)\) is compact in the strong topology, we can assume \(\lim_k x_k = x, x\in \mathcal{S}(H_n)\). Let \[\lambda_k=\frac{\left \langle x,x_k \right \rangle}{\left \lvert \left \langle x,x_k \right \rangle \right \rvert}\]
+        \(\lambda_k \to 1\) as \(k \to \infty \) since \(x_k \to x\). So, \(\left \langle \lambda_k x_k,x \right \rangle=\left \lvert \left \langle x,x_k \right \rangle \right \rvert\) is real and the linear subspace \(M\) generated by \(\{\lambda_k x_k, x\}\) over \(\mathbb{R}\) is a completely real subspace. Therefore, there is a Hermitian operator \(T\) on \(M\) such that \(f(x)=\left \langle Tx,x \right \rangle\) by the assumpion. Since \(f(x_k)=f(\lambda_k x_k)\), we have
+        \begin{eqnarray*}
+            \left \lvert f(x) - M \right \rvert &\le&
+            \left \lvert f(x) - f(\lambda_k x_k) \right \rvert + \left \lvert f(\lambda_k x_k) - M \right \rvert \\
+            &=& \left \lvert \left \langle Tx,x \right \rangle - \left \langle Tx_k,x_k \right \rangle\right \rvert + \left \lvert f(x_k) - M \right \rvert \\
+            &\le& 2 \left \lVert T \right \rVert \left \lVert x-x_k \right \rVert + \left \lvert f(x_k) - M \right \rvert \to 0
+        \end{eqnarray*}
+        Now, extend the function \(f\) to the whole \(H\) via
+        \[F(z)=\begin{dcases*}
+            0 & if \(x=0\),\\
+            \left \lVert z \right \rVert^2 f\left(\frac{z}{\left \lVert z \right \rVert}\right) & if \(z \neq 0\),
+        \end{dcases*} \]
+        for all \(z \in H\). Then we have
+        \[F(cz)=\left \lvert c \right \rvert F(z)\]
+        for all scalar \(c\) and for all \(z \in H\).
+        If \(y\) is any vector of \(H\) orthogonal to \(x\), then
+        \[F(cx+y)=\left \lvert c \right \rvert^2 M + F(y)\]
+        for all scalar \(c\). Let \(L\) be the two-dimensional real linear subspace generated by \(x\) and \(y\). Then \(L\) is completely real. Since \(f\) is regular on \(L\), there is a Hermitian bilinear form \(t_L\). But \(x\) is the point at which the maximum of the bilinear form, and \(y\) is orthogonal to \(x\) in \(L\). Hence the matrix of the bilinear form \(t_L\) is diagonal with respect to the orthonormal basis \(\{x,y\}\) of \(L\). So,
+        \[F(rx+sy)=\left \lvert r \right \rvert^2 M + \left \lvert s \right \rvert^2 F(y)\]
+        for all real numbers \(r,s\). Assume \(z\) is any vector of \(H\) orthogonal to \(x\), and \(c\) is a non-zero scalar. Then,
+        \begin{eqnarray*}
+            F(cx+z) &= & F(c(x+c^{-1}z)) \\
+            &=& \left \lvert c \right \rvert^2 F(x+c^{-1}z) \\
+            &=& \left \lvert c \right \rvert^2 F(x+\left \lvert c \right \rvert^{-1}\left \lvert c \right \rvert c^{-1}z)
+        \end{eqnarray*}
+        and \(y=\left \lvert c \right \rvert^{-1}cz\) is orthogonal to \(x\). Then
+        \[F(x+c^{-1}z)=M+\left \lvert c \right \rvert^{-2}F(\left \lvert c \right \rvert c^{-1}z )=M + \left \lvert c \right \rvert^{-1}F(z)\]
+        which gives \[F(cx+z)=\left \lvert c \right \rvert^2 M + F(z).\]
+        We have proved that if the restriction of a semibounded frame function to any completely real subspace is regular, so is \(f\) on \(H_2\).
+
+        The restriction of \(f\) to \(K_{n-1}=\mathrm{span}(x)^\perp\) is a semibounded frame function on \(K_{n-1}\). To use induction, assume that the lemma is true for any \(k<n\). Then \(F \rvert_{K_{n-1}}\) is regular by the induction hypothesis and there is an orthonormal basis \(\{e_1,\dots,e_{n-1}\}\) for \(K_{n-1}\) and real numbers \(M_1,\dots,M_{n-1}\) such that
+        \[F(c_1e_1 +\cdots + c_{n-1}e_{n-1})= \left \lvert c_1 \right \rvert^2 M_1 + \cdots + \left \lvert c_{n-1} \right \rvert^2 M_{n-1} \]
+        for any scalars \(c_1,\cdots,c_{n-1}\). We see that
+        \[F(cx+c_1e_1 + \cdots + c_{n-1}e_{n-1})=\left \lvert c \right \rvert^2 M + \left \lvert c_1 \right \rvert^2 M_1 + \cdots + \left \lvert c_{n-1} \right \rvert^2 M_{n-1}\]
+    \end{proof}
+    Therefore, \(f(x)=\left \langle Ux,x \right \rangle\) where \(U\) is a Hermitian operator on \(H_n\) such that \(Ux=Mx\) and \(Ue_j = M_je_j\) for \(j=1,\dots,n-1\).
+    \end{lemma}
+
+
+\begin{theorem}
+    \label{n-regular}
+    For \(n\ge 3\), any semibounded frame function on \(H_n\) is regular.
+    \begin{proof}
+        Since \(n \ge 3\), there is a completly real three-dimensional subspace \(M\) of \(H_n\), and \(f\rvert_{\mathcal{S}(M)} \) is regular. On the other hand, every completely real two-dimensional subspace \(N\) of \(H_n\) can be embedded in \(M\). So there is a bilinear form \(t_M\) on \(M\times M\) such that
+        \[f(x)=t_M(x,x)\]
+        for all \(x \in \mathcal{S}(M)\), and \(t_M \rvert_{N\times N}\) gives a bilinear form. Threfore \(f \rvert_{\mathcal{S}(H)}\) is regular. By the lemma \ref{regularity lemma}, \(f\) is regular.
+    \end{proof}
+\end{theorem}
+\begin{definition}
+    Let \(H\) be a Hilbert space.
+    \begin{itemize}
+        \item \(P(H)\) is the set of all finite-dimensional subspaces of \(H\)
+        \item \(P_1(H)\) is the set of all one-dimensional subspaces of \(H\)
+        \item A charge \(\mu\) is called \emph{bounded} if \(\sup_{M \in L(H)} \left \lvert \mu(M) \right \rvert < \infty \)
+        \item A charge \(\mu\) is called \emph{semibounded} if \(\inf_{M \in L(H)} \mu(M)>-\infty\)
+        \item A charge \(\mu\) is called \emph{\(P(H)\)-bounded} if \(\sup_{M \in P(H)} \left \lvert \mu(M) \right \rvert < \infty \)
+        \item A charge \(\mu\) is called \emph{\(P(H)\)-semibounded} if \(\inf_{M \in H(H)} \mu(M)>-\infty\)
+        \item A charge \(\mu\) is called \emph{\(P_1(H)\)-bounded} if \(\sup_{M \in P_1(H)} \left \lvert \mu(M) \right \rvert < \infty \)
+        \item A charge \(\mu\) is called \emph{\(P_1(H)\)-semibounded} if \(\inf_{M \in P_1(H)} \mu(M)>-\infty\)
+    \end{itemize}
+\end{definition}
+\begin{theorem}[Gleason's theorem for \(L(H_n)\)]
+    For every \(P_1(H)\)-semibounded charge \(\mu\) on \(L(H_n)\) for \(n\ge 3\), there is a unique Hermitian operator \(T\) on \(H_n\) such that
+    \[\mu(M)=\mathrm{tr}\,(TP_M)\]
+    for all \(M \in L(H_n)\).
+    \begin{proof}
+        Let \(f_{\mu}: \mathcal{S}(H) \to \mathbb{R}\) be a frame function on \(H_n\) with the weight \(\mu(H)\) given by
+        \[f_{\mu}=\mu(\mathrm{span}(x))\]
+        By theorem \ref{n-regular}, there is a unique Hermitian operator \(T\) on \(H_n\) such that \[f_\mu(x)=\left \langle Tx,x \right \rangle\]
+        Let \(M \in L(H_n), M \neq \{0\}\), and let \(\{e_1,\dots,e_k\}\) be an orthonormal basis of \(M\). Then,
+        \begin{eqnarray*}
+            \mu(M) &=& \sum_{i=1}^{k} \mu(\mathrm{span (e_i)}) \\
+            &=& \sum_{i=1}^{k} \left \langle Te_i,e_i \right \rangle \\
+            &=& \sum_{i=1}^{k} \mathrm{tr}(Te_i \otimes \bar{e_i}) \\
+            &=& \mathrm{tr}\left(T\left( \sum_{i=1}^{k} e_i \otimes \bar{e_i} \right)\right)\\
+            &=& \mathrm{tr}(TP_M)
+        \end{eqnarray*}
+    \end{proof}
 \end{theorem}
